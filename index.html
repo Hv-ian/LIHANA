@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="t-page-title">Version1</title>
+  <meta name="description" content="Experience Belgian elegance with modern refinement. From morning espresso to evening dégustation, we craft memorable experiences.">
+
+  <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  
+
+  <header class="nav">
+    <div class="logo t-logo">LIHANA EETCAFÉ</div>
+
+    <div class="lang-switcher">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="nl">NL</button>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a class="t-home" href="#home">Home</a></li>
+        <li><a class="t-about" href="#about">About</a></li>
+        <li><a class="t-menus" href="#menus">Menus</a></li>
+        <li><a class="t-gallery" href="#gallery">Gallery</a></li>
+        <li><a class="t-tasting" href="tasting.html">Tasting Menu</a></li>
+        <li><a class="t-book" href="#booking">Book</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title t-hero-title">LIHANA Eetcafé</h1>
+      <p class="hero-sub t-hero-sub">Belgian dining • Artisan café</p>
+      <div class="hero-buttons">
+        <a href="#booking" class="btn btn-primary hero-btn">
+          <span class="t-reserve-btn">Reserve a Table</span>
+        </a>
+        <a href="#menus" class="btn btn-secondary">
+          <span class="t-view-menus">View Menus</span>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- CAFE MORNING INTRO -->
+  <section class="cafe-intro section">
+    <div class="container">
+      <div class="intro-content">
+        <h2 class="t-cafe-intro-title">Mornings at LIHANA</h2>
+        <p class="t-cafe-intro-text">
+          Start your day with artisan pastries, fresh-roasted coffee and a tranquil Parisian café atmosphere.
+        </p>
+        <div class="cafe-features">
+          <div class="feature feature1">
+            <div class="feature-icon">☕</div>
+            <h4 class="t-feature1-title">Artisan Coffee</h4>
+            <p class="t-feature1-text">Freshly roasted beans from Paris</p>
+          </div>
+          <div class="feature feature2">
+            <div class="feature-icon">🥐</div>
+            <h4 class="t-feature2-title">Belgian Pastries</h4>
+            <p class="t-feature2-text">Baked fresh daily</p>
+          </div>
+          <div class="feature feature3">
+            <div class="feature-icon">🍵</div>
+            <h4 class="t-feature3-title">Relaxing Tea</h4>
+            <p class="t-feature3-text">Perfect for Tea time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="t-about-title">Belgian dining with Modern Refinement</h2>
+          <p class="t-about-text">
+            LIHANA Dining blends classic Belgian gastronomy with contemporary ambience. From morning espresso to evening dégustation, we craft memorable experiences that celebrate the art of Belgian cuisine.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label t-stat1">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label t-stat2">Wine Selection</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4.9</span>
+              <span class="stat-label t-stat3">Guest Rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="LIHANA Dining Interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENUS -->
+  <section id="menus" class="section alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="t-menus-title">Our Menus</h2>
+        <p class="t-menus-subtitle">Discover our carefully crafted culinary experiences</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-menu="dinner">
+          <span class="tab-icon">🍽️</span>
+          <span class="t-tab-dinner">Dinner</span>
+        </button>
+        <button class="tab" data-menu="cafe">
+          <span class="tab-icon">☕</span>
+          <span class="t-tab-cafe">Café</span>
+        </button>
+        <button class="tab" data-menu="dessert">
+          <span class="tab-icon">🍰</span>
+          <span class="t-tab-dessert">Desserts</span>
+        </button>
+        <button class="tab" data-menu="wine">
+          <span class="tab-icon">🍷</span>
+          <span class="t-tab-wine">Wine List</span>
+        </button>
+      </div>
+
+      <!-- DINNER -->
+      <div class="menu-content active" id="dinner">
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Coquilles Saint-Jacques">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-dish1-title">Coquilles Saint-Jacques</h3>
+            <p class="t-dish1-desc">Seared scallops, beurre blanc, citrus emulsion, micro herbs</p>
+            <span class="price">€38</span>
+          </div>
+        </div>
+
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" alt="Soupe à l'Oignon">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-dish2-title">Soupe à l'Oignon</h3>
+            <p class="t-dish2-desc">Caramelised onions, rich beef broth, Gruyère crust, croutons</p>
+            <span class="price">€24</span>
+          </div>
+        </div>
+
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://i0.wp.com/www.whats4eats.com/wp-content/uploads/2023/11/poultry-canard-a-lorange-iStock-16444997-4x3-1.jpg?w=800&ssl=1" alt="Canard à l'Orange">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-dish3-title">Canard à l'Orange</h3>
+            <p class="t-dish3-desc">Crispy duck breast, orange gastrique, seasonal vegetables, potato gratin</p>
+            <span class="price">€42</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAFE -->
+      <div class="menu-content" id="cafe">
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2148&q=80" alt="Croissant au Beurre">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-cafe1-title">Croissant au Beurre</h3>
+            <p class="t-cafe1-desc">Freshly baked every morning with Belgian butter, flaky and golden</p>
+            <span class="price">€4.5</span>
+          </div>
+        </div>
+
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2024/07/Quiche-Lorraine24-1.jpg" alt="Quiche Lorraine">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-cafe2-title">Quiche Lorraine</h3>
+            <p class="t-cafe2-desc">Smoked bacon, Gruyère cheese, crème fraîche in buttery pastry</p>
+            <span class="price">€12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESSERT -->
+      <div class="menu-content" id="dessert">
+        <div class="dish">
+          <div class="dish-image">
+            <img src="https://www.vanillabeancuisine.com/wp-content/uploads/2023/09/Creme-Brulee-20.jpg" alt="Crème Brûlée">
+          </div>
+          <div class="dish-content">
+            <h3 class="t-dessert1-title">Crème Brûlée</h3>
+            <p class="t-dessert1-desc">Vanilla bean custard, caramelized sugar top, seasonal berries</p>
+            <span class="price">€14</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WINE -->
+      <div class="menu-content" id="wine">
+        <div class="wine-category">
+          <h3 class="t-wine-white">White Wines</h3>
+          <ul class="wine-list">
+            <li>
+              <strong class="t-wine1-name">Chablis Premier Cru</strong>
+              <span class="t-wine1-region">Burgundy, France</span>
+              <span class="price">€65</span>
+            </li>
+            <li>
+              <strong class="t-wine2-name">Sancerre</strong>
+              <span class="t-wine2-region">Loire Valley, France</span>
+              <span class="price">€58</span>
+            </li>
+          </ul>
+        </div>
+        <div class="wine-category">
+          <h3 class="t-wine-red">Red Wines</h3>
+          <ul class="wine-list">
+            <li>
+              <strong class="t-wine3-name">Château Margaux</strong>
+              <span class="t-wine3-region">Bordeaux, France</span>
+              <span class="price">€220</span>
+            </li>
+            <li>
+              <strong class="t-wine4-name">Châteauneuf-du-Pape</strong>
+              <span class="t-wine4-region">Rhône Valley, France</span>
+              <span class="price">€75</span>
+            </li>
+          </ul>
+        </div>
+        <div class="wine-category">
+          <h3 class="t-wine-sparkling">Sparkling</h3>
+          <ul class="wine-list">
+            <li>
+              <strong class="t-wine5-name">Champagne Brut</strong>
+              <span class="t-wine5-region">Champagne, France</span>
+              <span class="price">€95</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="t-gallery-title">Gallery</h2>
+        <p class="t-gallery-subtitle">Step into our world of culinary excellence</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Interior">
+          <div class="gallery-overlay">
+            <span class="t-gallery1">Elegant Dining Room</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" alt="Wine Collection">
+          <div class="gallery-overlay">
+            <span class="t-gallery2">Wine Cellar</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Chef Preparing Food">
+          <div class="gallery-overlay">
+            <span class="t-gallery3">Chef's Kitchen</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dessert Presentation">
+          <div class="gallery-overlay">
+            <span class="t-gallery4">Artisan Desserts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="t-book-title">Reserve Your Experience</h2>
+        <p class="t-book-subtitle">Secure your table for an unforgettable dining experience</p>
+      </div>
+
+      <div class="booking-form-container">
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="t-form-name">Full Name</label>
+              <input type="text" id="name" name="name" required class="t-form-name-placeholder" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="t-form-email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="t-form-phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required class="t-form-phone-placeholder" placeholder="+1 (555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="guests" class="t-form-guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="" disabled selected class="t-form-guests-default">Select number of guests</option>
+                <option value="1" class="t-form-guests-1">1 person</option>
+                <option value="2" class="t-form-guests-2">2 people</option>
+                <option value="3" class="t-form-guests-3">3 people</option>
+                <option value="4" class="t-form-guests-4">4 people</option>
+                <option value="5" class="t-form-guests-5">5 people</option>
+                <option value="6" class="t-form-guests-6">6 people</option>
+                <option value="7" class="t-form-guests-7">7+ people (special arrangement)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date" class="t-form-date">Preferred Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time" class="t-form-time">Preferred Time</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected class="t-form-time-default">Select preferred time</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="special-requests" class="t-form-requests">Special Requests</label>
+            <textarea id="special-requests" name="special-requests" rows="4" class="t-form-requests-placeholder" placeholder="Dietary restrictions, allergies, celebrations, or any special requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span class="btn-text t-submit-btn">Reserve Now</span>
+            <span class="btn-loading t-submit-loading" style="display: none;">Processing...</span>
+          </button>
+        </form>
+
+        <div class="booking-confirmation" id="bookingConfirmation" style="display: none;">
+          <div class="confirmation-content">
+            <div class="confirmation-icon">✓</div>
+            <h3 class="t-confirm-title">Reservation Confirmed!</h3>
+            <p class="t-confirm-message">Thank you for choosing LIHANA Dining. We've received your booking request and will send a confirmation email shortly.</p>
+            <div class="confirmation-details">
+              <p class="t-confirm-steps"><strong>Next Steps:</strong></p>
+              <ul>
+                <li class="t-confirm-step1">Check your email for confirmation</li>
+                <li class="t-confirm-step2">Arrive 15 minutes early</li>
+                <li class="t-confirm-step3">Present your confirmation at reception</li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary" id="newBooking">
+              <span class="t-new-booking">Make Another Reservation</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-alternative">
+        <p class="alt-text t-phone-alternative">Prefer to book by phone? Call us directly: <strong>+44 20 7123 4567</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="t-contact-title">Visit Us</h2>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong class="t-contact-address-label">Address</strong>
+              <p class="t-contact-address">12 Rue Lumière, Mayfair<br>London W1K 4QU</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong class="t-contact-phone-label">Phone</strong>
+              <p class="t-contact-phone">+44 20 7123 4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong class="t-contact-email-label">Email</strong>
+              <p class="t-contact-email">reservations@LIHANAdining.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <strong class="t-contact-hours-label">Hours</strong>
+              <p class="t-contact-hours">Monday - Sunday: 8am – 11pm<br>Weekend Brunch: 10am - 3pm</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="LIHANA Dining Location">
+            <div class="map-overlay">
+              <p class="t-map-text">📍 12 Rue Lumière, Mayfair, London</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="t-footer-logo">LIHANA Eetcafé</h3>
+          <p class="t-footer-desc">Belgian elegance meets modern refinement in the heart of London.</p>
+        </div>
+        <div class="footer-section">
+          <h4 class="t-footer-links">Quick Links</h4>
+          <ul>
+            <li><a href="#home" class="t-footer-home">Home</a></li>
+            <li><a href="#menus" class="t-footer-menus">Menus</a></li>
+            <li><a href="#gallery" class="t-footer-gallery">Gallery</a></li>
+            <li><a href="#booking" class="t-footer-reservations">Reservations</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="t-footer-connect">Connect</h4>
+          <ul>
+            <li><a href="#" class="t-footer-instagram">Instagram</a></li>
+            <li><a href="#" class="t-footer-facebook">Facebook</a></li>
+            <li><a href="#" class="t-footer-twitter">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="t-footer-newsletter">Newsletter</h4>
+          <p class="t-footer-newsletter-desc">Subscribe for exclusive offers and events</p>
+          <div class="newsletter-form">
+            <input type="email" class="t-footer-email-placeholder" placeholder="Your email address">
+            <button type="submit" class="t-footer-subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="t-footer-copyright">© 2024 LIHANA Eetcafé — All rights reserved. Crafted with passion in London.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
