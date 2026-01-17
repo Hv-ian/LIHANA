@@ -12,14 +12,21 @@ function initNavbarScroll() {
       nav.classList.remove('scrolled');
     }
 
-    // Hide navbar on scroll down, show on scroll up
+    if (navMenu?.classList.contains("open")) {
+      nav.style.transform = 'translateY(0)';
+      lastScrollY = window.scrollY;
+      return;
+    }
+
     if (window.scrollY > lastScrollY && window.scrollY > 100) {
       nav.style.transform = 'translateY(-100%)';
     } else {
       nav.style.transform = 'translateY(0)';
     }
+
     lastScrollY = window.scrollY;
   });
+
 }
 
 function revealSections() {
@@ -34,9 +41,20 @@ function revealSections() {
   });
 }
 
+const burger = document.querySelector(".burger");
+const navMenu = document.querySelector(".nav nav");
+
+if (burger && navMenu) {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("open");
+    document.body.classList.toggle("menu-open"); // ← ADD THIS LINE
+  });
+}
+
+
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
-document.addEventListener('DOMContentLoaded', revealSections);
 
 /* ---------------------
    GSAP ENTRANCE ANIMATIONS
@@ -50,6 +68,17 @@ function initGSAPAnimations() {
     const heroTitle = document.querySelector('.hero-title');
     const heroSub = document.querySelector('.hero-sub');
     const heroBtns = document.querySelectorAll('.hero-buttons .btn');
+    const heroLogo = document.querySelector('.hero-logo-image');
+    if (heroLogo) {
+      gsap.to(heroLogo, {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        delay: 0.15,
+        ease: "power3.out"
+      });
+    }
+
 
     if (heroTitle) {
       gsap.to(heroTitle, {
@@ -266,6 +295,18 @@ function initLanguageSystem() {
       't-book': "Book",
       't-logo': "LIHANA EETCAFÉ",
 
+      't-tab-alcohol': "Alcohol",
+      't-aperitifs-title': "Aperitifs",
+      't-cocktails-title': "Cocktails",
+      't-beers-title': "Beers",
+      't-spirits-title': "Spirits & Digestifs",
+      't-starters-title': "Starters",
+      't-mains-title': "Main Dishes",
+      't-snacks-title': "Snacks",
+      't-hotdrinks-title': "Hot Drinks",
+      't-desserts-title': "Desserts",
+
+
       // Hero Section
       't-hero-title': "LIHANA Eetcafé",
       't-hero-sub': "Belgian dining • Artisan café",
@@ -283,13 +324,14 @@ function initLanguageSystem() {
       't-feature3-text': "Perfect for Tea time",
 
       // About Section
-      't-about-title': "Belgian Dining with Modern Refinement",
+      't-about-title': "Belgian Dining with cultural refinement",
       't-about-text': "LIHANA Eetcafé blends classic Belgian gastronomy with contemporary ambience. From morning espresso to evening dégustation, we craft memorable experiences that celebrate the art of Belgian cuisine.",
       't-stat1': "Years Experience",
       't-stat2': "Wine Selection",
       't-stat3': "Guest Rating",
 
       // Menus Section
+      't-menu-pdf': "View full menu (PDF)",
       't-menus-title': "Our Menus",
       't-menus-subtitle': "Discover our carefully crafted culinary experiences",
       't-tab-dinner': "Dinner",
@@ -497,6 +539,7 @@ function initLanguageSystem() {
       't-stat3': "Note des Clients",
 
       // Menus Section
+      't-menu-pdf': "Voir le menu complet (PDF)",
       't-menus-title': "Nos Menus",
       't-menus-subtitle': "Découvrez nos expériences culinaires soigneusement élaborées",
       't-tab-dinner': "Dîner",
@@ -702,6 +745,7 @@ function initLanguageSystem() {
       't-stat3': "Gast Beoordeling",
 
       // Menus Section
+      't-menu-pdf': "Bekijk volledige menukaart (PDF)",
       't-menus-title': "Onze Menu's",
       't-menus-subtitle': "Ontdek onze zorgvuldig samengestelde culinaire ervaringen",
       't-tab-dinner': "Diner",
@@ -1076,10 +1120,10 @@ function initSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
-      
+
       // Only handle internal page anchors, not external links
       if (href === '#' || href.startsWith('#!')) return;
-      
+
       e.preventDefault();
       const target = document.querySelector(href);
       if (target) {
@@ -1094,6 +1138,35 @@ function initSmoothScrolling() {
     });
   });
 }
+
+/* ---------------------
+   GALLERY CAROUSEL
+--------------------- */
+function initGalleryCarousel() {
+  const slides = document.querySelectorAll('.gallery-slide');
+  const prevBtn = document.querySelector('.gallery-btn.prev');
+  const nextBtn = document.querySelector('.gallery-btn.next');
+
+  if (!slides.length || !prevBtn || !nextBtn) return;
+
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+}
+
 
 /* ---------------------
    IMAGE LAZY LOADING
@@ -1117,13 +1190,13 @@ function initLazyLoading() {
 
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM loaded - initializing functions');
-  
+
   // Test if buttons exist
   const reserveBtn = document.querySelector('a[href="#booking"]');
   const menusBtn = document.querySelector('a[href="#menus"]');
   console.log('Reserve button found:', reserveBtn);
   console.log('Menus button found:', menusBtn);
-  
+
   // Your existing initialization
   initNavbarScroll();
   revealSections();
@@ -1133,6 +1206,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initBookingForm();
   initSmoothScrolling();
   initLazyLoading();
+  initGalleryCarousel();
 });
 
 // Re-initialize on page resize
@@ -1142,3 +1216,12 @@ window.addEventListener('resize', revealSections);
 window.addEventListener('load', function () {
   document.body.classList.add('loaded');
 });
+
+if (burger && navMenu) {
+  document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("active");
+      navMenu.classList.remove("open");
+    });
+  });
+}
