@@ -5,14 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title class="t-page-title">Version1</title>
-  <meta name="description" content="Experience Belgian elegance with modern refinement. From morning espresso to evening dégustation, we craft memorable experiences.">
+  <meta name="description"
+    content="Experience Belgian elegance with modern refinement. From morning espresso to evening dégustation, we craft memorable experiences.">
 
   <!-- Styles -->
-    <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -20,10 +42,18 @@
 </head>
 
 <body>
-  
-
   <header class="nav">
-    <div class="logo t-logo">LIHANA EETCAFÉ</div>
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="brand">
+      <img src="images/logo.png" alt="LIHANA logo" class="brand-logo">
+      <div class="logo t-logo">LIHANA EETCAFÉ</div>
+    </div>
+
 
     <div class="lang-switcher">
       <button data-lang="en" class="active">EN</button>
@@ -47,7 +77,12 @@
   <section id="home" class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-title t-hero-title">LIHANA Eetcafé</h1>
+      <div class="hero-logo-mark">
+        <img src="images/logo.png" alt="LIHANA logo" class="hero-logo-image">
+        <h1 class="hero-title hero-eetcafe">EETCAFÉ</h1>
+      </div>
+
+
       <p class="hero-sub t-hero-sub">Belgian dining • Artisan café</p>
       <div class="hero-buttons">
         <a href="#booking" class="btn btn-primary hero-btn">
@@ -63,43 +98,15 @@
     </div>
   </section>
 
-  <!-- CAFE MORNING INTRO -->
-  <section class="cafe-intro section">
-    <div class="container">
-      <div class="intro-content">
-        <h2 class="t-cafe-intro-title">Mornings at LIHANA</h2>
-        <p class="t-cafe-intro-text">
-          Start your day with artisan pastries, fresh-roasted coffee and a tranquil Parisian café atmosphere.
-        </p>
-        <div class="cafe-features">
-          <div class="feature feature1">
-            <div class="feature-icon">☕</div>
-            <h4 class="t-feature1-title">Artisan Coffee</h4>
-            <p class="t-feature1-text">Freshly roasted beans from Paris</p>
-          </div>
-          <div class="feature feature2">
-            <div class="feature-icon">🥐</div>
-            <h4 class="t-feature2-title">Belgian Pastries</h4>
-            <p class="t-feature2-text">Baked fresh daily</p>
-          </div>
-          <div class="feature feature3">
-            <div class="feature-icon">🍵</div>
-            <h4 class="t-feature3-title">Relaxing Tea</h4>
-            <p class="t-feature3-text">Perfect for Tea time</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ABOUT -->
   <section id="about" class="section reveal">
     <div class="container">
       <div class="about-content">
         <div class="about-text">
-          <h2 class="t-about-title">Belgian dining with Modern Refinement</h2>
+          <h2 class="t-about-title">Belgian dining with cultural refinement</h2>
           <p class="t-about-text">
-            LIHANA Dining blends classic Belgian gastronomy with contemporary ambience. From morning espresso to evening dégustation, we craft memorable experiences that celebrate the art of Belgian cuisine.
+            LIHANA Dining blends classic Belgian gastronomy with contemporary ambience. From morning espresso to evening
+            dégustation, we craft memorable experiences that celebrate the art of Belgian cuisine.
           </p>
           <div class="about-stats">
             <div class="stat">
@@ -117,7 +124,7 @@
           </div>
         </div>
         <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="LIHANA Dining Interior">
+          <img src="images/inside1.jpeg" alt="LIHANA Dining Interior">
         </div>
       </div>
     </div>
@@ -128,6 +135,11 @@
     <div class="container">
       <div class="section-header">
         <h2 class="t-menus-title">Our Menus</h2>
+        <div class="menu-pdf">
+          <a href="drukproef.pdf" target="_blank" rel="noopener" class="menu-pdf-btn">
+            📄 <span class="t-menu-pdf">View full menu (PDF)</span>
+          </a>
+        </div>
         <p class="t-menus-subtitle">Discover our carefully crafted culinary experiences</p>
       </div>
 
@@ -144,130 +156,255 @@
           <span class="tab-icon">🍰</span>
           <span class="t-tab-dessert">Desserts</span>
         </button>
-        <button class="tab" data-menu="wine">
+        <button class="tab" data-menu="alcohol">
           <span class="tab-icon">🍷</span>
-          <span class="t-tab-wine">Wine List</span>
+          <span class="t-tab-alcohol">Alcohol</span>
         </button>
       </div>
 
       <!-- DINNER -->
       <div class="menu-content active" id="dinner">
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Coquilles Saint-Jacques">
-          </div>
-          <div class="dish-content">
-            <h3 class="t-dish1-title">Coquilles Saint-Jacques</h3>
-            <p class="t-dish1-desc">Seared scallops, beurre blanc, citrus emulsion, micro herbs</p>
-            <span class="price">€38</span>
-          </div>
+
+        <!-- Starters -->
+        <div class="wine-category">
+          <h3 class="t-starters-title">Starters</h3>
+          <ul class="wine-list">
+            <li><strong>Cheese croquette (1)</strong><span></span><span class="price">€6.5</span></li>
+            <li><strong>Shrimp croquette (2)</strong><span></span><span class="price">€15</span></li>
+            <li><strong>Scampi garlic (5)</strong><span></span><span class="price">€17</span></li>
+            <li><strong>Duo cheese & shrimp croquettes</strong><span></span><span class="price">€14</span></li>
+          </ul>
         </div>
 
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" alt="Soupe à l'Oignon">
+        <!-- Main dishes -->
+        <div class="wine-category">
+          <h3 class="t-mains-title">Main Dishes</h3>
+
+          <!-- Steak ±300 g -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/steak300g.jpeg" alt="Steak 300 grams">
+            </div>
+            <div class="dish-content">
+              <h3>Steak ±300 g</h3>
+              <p>Grilled beef steak, served with chips and sauce of choice</p>
+            </div>
+            <div class="price">€26</div>
           </div>
-          <div class="dish-content">
-            <h3 class="t-dish2-title">Soupe à l'Oignon</h3>
-            <p class="t-dish2-desc">Caramelised onions, rich beef broth, Gruyère crust, croutons</p>
-            <span class="price">€24</span>
+
+          <!-- Small steak ±180 g -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/steak klein 180 kroket.jpeg" alt="Small steak 180 grams">
+            </div>
+            <div class="dish-content">
+              <h3>Small steak ±180 g</h3>
+              <p>Smaller cut of beef steak, served with croquettes</p>
+            </div>
+            <div class="price">€22</div>
           </div>
+
+          <!-- Small steak ±180 g – pepper sauce -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/steak klein 180 pepper sause.jpeg" alt="Small steak pepper sauce">
+            </div>
+            <div class="dish-content">
+              <h3>Small steak ±180 g</h3>
+              <p>Served with creamy pepper sauce and croquettes</p>
+            </div>
+            <div class="price">€22</div>
+          </div>
+
+          <!-- Tagliata di manzo -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/Tagliata di manzo ±250 g.jpeg" alt="Tagliata di manzo">
+            </div>
+            <div class="dish-content">
+              <h3>Tagliata di manzo ±250 g</h3>
+              <p>Sliced beef steak with rocket, Parmesan and olive oil</p>
+            </div>
+            <div class="price">€28</div>
+          </div>
+
+          <!-- Pork cheek stew -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/Stoofvlees van varkenswangetjes.jpeg" alt="Pork cheek stew">
+            </div>
+            <div class="dish-content">
+              <h3>Pork cheek stew</h3>
+              <p>Slow-cooked pork cheeks in a rich Belgian-style gravy</p>
+            </div>
+            <div class="price">€21</div>
+          </div>
+
+          <!-- Scampi in tomato cream sauce -->
+          <div class="dish">
+            <div class="dish-image">
+              <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Scampi tomato cream sauce">
+            </div>
+            <div class="dish-content">
+              <h3>Scampi in tomato cream sauce</h3>
+              <p>Ten scampi served in a tomato and cream sauce</p>
+            </div>
+            <div class="price">€25</div>
+          </div>
+
+          <!-- Remaining mains without images -->
+          <ul class="wine-list">
+            <li>
+              <strong>Chicken brochette (2 pcs)</strong>
+              <span></span>
+              <span class="price">€25</span>
+            </li>
+            <li>
+              <strong>Vol-au-vent</strong>
+              <span></span>
+              <span class="price">€21</span>
+            </li>
+            <li>
+              <strong>Trout fillet with herb butter</strong>
+              <span></span>
+              <span class="price">€27</span>
+            </li>
+            <li>
+              <strong>Tagliatelle scampi</strong>
+              <span></span>
+              <span class="price">€25</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://i0.wp.com/www.whats4eats.com/wp-content/uploads/2023/11/poultry-canard-a-lorange-iStock-16444997-4x3-1.jpg?w=800&ssl=1" alt="Canard à l'Orange">
-          </div>
-          <div class="dish-content">
-            <h3 class="t-dish3-title">Canard à l'Orange</h3>
-            <p class="t-dish3-desc">Crispy duck breast, orange gastrique, seasonal vegetables, potato gratin</p>
-            <span class="price">€42</span>
-          </div>
+
+        <!-- Snacks -->
+        <div class="wine-category">
+          <h3 class="t-snacks-title">Snacks</h3>
+          <ul class="wine-list">
+            <li><strong>Bitterballen</strong><span></span><span class="price">€7</span></li>
+            <li><strong>Crispy chicken</strong><span></span><span class="price">€7</span></li>
+            <li><strong>Calamari</strong><span></span><span class="price">€7</span></li>
+            <li><strong>Mixed snack platter</strong><span></span><span class="price">€22</span></li>
+          </ul>
         </div>
+
       </div>
+
 
       <!-- CAFE -->
       <div class="menu-content" id="cafe">
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2148&q=80" alt="Croissant au Beurre">
-          </div>
-          <div class="dish-content">
-            <h3 class="t-cafe1-title">Croissant au Beurre</h3>
-            <p class="t-cafe1-desc">Freshly baked every morning with Belgian butter, flaky and golden</p>
-            <span class="price">€4.5</span>
-          </div>
-        </div>
-
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2024/07/Quiche-Lorraine24-1.jpg" alt="Quiche Lorraine">
-          </div>
-          <div class="dish-content">
-            <h3 class="t-cafe2-title">Quiche Lorraine</h3>
-            <p class="t-cafe2-desc">Smoked bacon, Gruyère cheese, crème fraîche in buttery pastry</p>
-            <span class="price">€12</span>
-          </div>
+        <div class="wine-category">
+          <h3 class="t-hotdrinks-title">Hot Drinks</h3>
+          <ul class="wine-list">
+            <li><strong>Coffee</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong>Espresso</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong>Cappuccino</strong><span></span><span class="price">€4</span></li>
+            <li><strong>Latte</strong><span></span><span class="price">€4</span></li>
+            <li><strong>Hot chocolate</strong><span></span><span class="price">€3</span></li>
+            <li><strong>Tea (selection)</strong><span></span><span class="price">€2.5</span></li>
+          </ul>
         </div>
       </div>
+
 
       <!-- DESSERT -->
       <div class="menu-content" id="dessert">
-        <div class="dish">
-          <div class="dish-image">
-            <img src="https://www.vanillabeancuisine.com/wp-content/uploads/2023/09/Creme-Brulee-20.jpg" alt="Crème Brûlée">
-          </div>
-          <div class="dish-content">
-            <h3 class="t-dessert1-title">Crème Brûlée</h3>
-            <p class="t-dessert1-desc">Vanilla bean custard, caramelized sugar top, seasonal berries</p>
-            <span class="price">€14</span>
-          </div>
+        <div class="wine-category">
+          <h3 class="t-desserts-title">Desserts</h3>
+          <ul class="wine-list">
+
+            <li><strong>Dame blanche (1 scoop)</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Dame blanche (2 scoops)</strong><span></span><span class="price">€9</span></li>
+
+            <li><strong>Coupe advocaat (1 scoop)</strong><span></span><span class="price">€7</span></li>
+            <li><strong>Coupe advocaat (2 scoops)</strong><span></span><span class="price">€10</span></li>
+
+            <li><strong>Coupe brésilienne (1 scoop)</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Coupe brésilienne (2 scoops)</strong><span></span><span class="price">€9</span></li>
+
+            <li><strong>Moelleux au chocolat</strong><span></span><span class="price">€9</span></li>
+
+            <li><strong>Pancake with sugar (1 pc)</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Pancake with sugar (2 pcs)</strong><span></span><span class="price">€8</span></li>
+
+            <li><strong>Pancake with ice cream (1 pc)</strong><span></span><span class="price">€8</span></li>
+            <li><strong>Pancake with ice cream (2 pcs)</strong><span></span><span class="price">€10</span></li>
+
+            <li><strong>Pancake brésilienne (1 pc)</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Pancake brésilienne (2 pcs)</strong><span></span><span class="price">€8</span></li>
+
+            <li><strong>Pancake advocaat (1 pc)</strong><span></span><span class="price">€8</span></li>
+            <li><strong>Pancake advocaat (2 pcs)</strong><span></span><span class="price">€10</span></li>
+
+            <li><strong>Waffle with topping (chocolate, strawberry or caramel)</strong><span></span><span
+                class="price">€6</span></li>
+
+            <li><strong>Children’s ice cream (Cornetto)</strong><span></span><span class="price">€3</span></li>
+
+            <li><strong>Armenian honey cake (slice)</strong><span></span><span class="price">€2.5</span></li>
+
+            <li><strong>Chips (salt)</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong>Chips (paprika)</strong><span></span><span class="price">€2.5</span></li>
+
+          </ul>
         </div>
       </div>
 
+
+
       <!-- WINE -->
-      <div class="menu-content" id="wine">
+      <div class="menu-content" id="alcohol">
+
+        <!-- Aperitifs -->
         <div class="wine-category">
-          <h3 class="t-wine-white">White Wines</h3>
+          <h3 class="t-aperitifs-title">Aperitifs</h3>
           <ul class="wine-list">
-            <li>
-              <strong class="t-wine1-name">Chablis Premier Cru</strong>
-              <span class="t-wine1-region">Burgundy, France</span>
-              <span class="price">€65</span>
-            </li>
-            <li>
-              <strong class="t-wine2-name">Sancerre</strong>
-              <span class="t-wine2-region">Loire Valley, France</span>
-              <span class="price">€58</span>
-            </li>
+            <li><strong>Kirr</strong><span></span><span class="price">€5</span></li>
+            <li><strong>Kirr Royal</strong><span></span><span class="price">€6.5</span></li>
+            <li><strong>Cava (glass)</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Cava (bottle)</strong><span></span><span class="price">€26</span></li>
+            <li><strong>Martini (white / red)</strong><span></span><span class="price">€5</span></li>
           </ul>
         </div>
+
+        <!-- Cocktails -->
         <div class="wine-category">
-          <h3 class="t-wine-red">Red Wines</h3>
+          <h3 class="t-cocktails-title">Cocktails</h3>
           <ul class="wine-list">
-            <li>
-              <strong class="t-wine3-name">Château Margaux</strong>
-              <span class="t-wine3-region">Bordeaux, France</span>
-              <span class="price">€220</span>
-            </li>
-            <li>
-              <strong class="t-wine4-name">Châteauneuf-du-Pape</strong>
-              <span class="t-wine4-region">Rhône Valley, France</span>
-              <span class="price">€75</span>
-            </li>
+            <li><strong>Mojito</strong><span></span><span class="price">€9</span></li>
+            <li><strong>Strawberry Mojito</strong><span></span><span class="price">€11</span></li>
+            <li><strong>Gin & Tonic</strong><span></span><span class="price">€9</span></li>
+            <li><strong>Aperol Spritz</strong><span></span><span class="price">€9</span></li>
           </ul>
         </div>
+
+        <!-- Beers -->
         <div class="wine-category">
-          <h3 class="t-wine-sparkling">Sparkling</h3>
+          <h3 class="t-beers-title">Beers</h3>
           <ul class="wine-list">
-            <li>
-              <strong class="t-wine5-name">Champagne Brut</strong>
-              <span class="t-wine5-region">Champagne, France</span>
-              <span class="price">€95</span>
-            </li>
+            <li><strong>Duvel</strong><span></span><span class="price">€4.5</span></li>
+            <li><strong>Westmalle Tripel</strong><span></span><span class="price">€5</span></li>
+            <li><strong>Tripel Karmeliet</strong><span></span><span class="price">€5</span></li>
+            <li><strong>Hoegaarden White</strong><span></span><span class="price">€2.7</span></li>
+            <li><strong>Carlsberg 0%</strong><span></span><span class="price">€3</span></li>
           </ul>
         </div>
+
+        <!-- Spirits -->
+        <div class="wine-category">
+          <h3 class="t-spirits-title">Spirits & Digestifs</h3>
+          <ul class="wine-list">
+            <li><strong>Baileys</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Amaretto</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Grand Marnier</strong><span></span><span class="price">€6</span></li>
+            <li><strong>Cognac</strong><span></span><span class="price">€7</span></li>
+            <li><strong>Jack Daniel’s</strong><span></span><span class="price">€7</span></li>
+          </ul>
+        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -279,34 +416,52 @@
         <p class="t-gallery-subtitle">Step into our world of culinary excellence</p>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Interior">
-          <div class="gallery-overlay">
-            <span class="t-gallery1">Elegant Dining Room</span>
+      <div class="gallery-carousel">
+        <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+
+        <div class="gallery-track">
+          <div class="gallery-slide active">
+            <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=2070&q=80"
+              alt="Restaurant Interior">
+            <div class="gallery-overlay">
+              <span class="t-gallery1">Elegant Dining Room</span>
+            </div>
+          </div>
+
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=2070&q=80"
+              alt="Wine Collection">
+            <div class="gallery-overlay">
+              <span class="t-gallery2">Wine Cellar</span>
+            </div>
+          </div>
+
+          <div class="gallery-slide">
+            <img src="images/inside1.jpeg" alt="Chef Preparing Food">
+            <div class="gallery-overlay">
+              <span class="t-gallery3">Chef's Kitchen</span>
+            </div>
+          </div>
+
+          <div class="gallery-slide">
+            <img src="images/bar2.jpeg" alt="Dessert Presentation">
+            <div class="gallery-overlay">
+              <span class="t-gallery4">Artisan Desserts</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <img src="images/inside2.jpeg" alt="Dessert Presentation">
+            <div class="gallery-overlay">
+              <span class="t-gallery4">Artisan Desserts</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80" alt="Wine Collection">
-          <div class="gallery-overlay">
-            <span class="t-gallery2">Wine Cellar</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Chef Preparing Food">
-          <div class="gallery-overlay">
-            <span class="t-gallery3">Chef's Kitchen</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dessert Presentation">
-          <div class="gallery-overlay">
-            <span class="t-gallery4">Artisan Desserts</span>
-          </div>
-        </div>
+
+        <button class="gallery-btn next" aria-label="Next image">›</button>
       </div>
     </div>
   </section>
+
 
   <!-- BOOKING -->
   <section id="booking" class="section alt reveal">
@@ -321,7 +476,8 @@
           <div class="form-row">
             <div class="form-group">
               <label for="name" class="t-form-name">Full Name</label>
-              <input type="text" id="name" name="name" required class="t-form-name-placeholder" placeholder="Enter your full name">
+              <input type="text" id="name" name="name" required class="t-form-name-placeholder"
+                placeholder="Enter your full name">
             </div>
             <div class="form-group">
               <label for="email" class="t-form-email">Email Address</label>
@@ -332,7 +488,8 @@
           <div class="form-row">
             <div class="form-group">
               <label for="phone" class="t-form-phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required class="t-form-phone-placeholder" placeholder="+1 (555) 123-4567">
+              <input type="tel" id="phone" name="phone" required class="t-form-phone-placeholder"
+                placeholder="+1 (555) 123-4567">
             </div>
             <div class="form-group">
               <label for="guests" class="t-form-guests">Number of Guests</label>
@@ -373,7 +530,8 @@
 
           <div class="form-group full-width">
             <label for="special-requests" class="t-form-requests">Special Requests</label>
-            <textarea id="special-requests" name="special-requests" rows="4" class="t-form-requests-placeholder" placeholder="Dietary restrictions, allergies, celebrations, or any special requirements..."></textarea>
+            <textarea id="special-requests" name="special-requests" rows="4" class="t-form-requests-placeholder"
+              placeholder="Dietary restrictions, allergies, celebrations, or any special requirements..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary submit-btn">
@@ -386,7 +544,8 @@
           <div class="confirmation-content">
             <div class="confirmation-icon">✓</div>
             <h3 class="t-confirm-title">Reservation Confirmed!</h3>
-            <p class="t-confirm-message">Thank you for choosing LIHANA Dining. We've received your booking request and will send a confirmation email shortly.</p>
+            <p class="t-confirm-message">Thank you for choosing LIHANA Dining. We've received your booking request and
+              will send a confirmation email shortly.</p>
             <div class="confirmation-details">
               <p class="t-confirm-steps"><strong>Next Steps:</strong></p>
               <ul>
@@ -403,7 +562,8 @@
       </div>
 
       <div class="contact-alternative">
-        <p class="alt-text t-phone-alternative">Prefer to book by phone? Call us directly: <strong>+44 20 7123 4567</strong></p>
+        <p class="alt-text t-phone-alternative">Prefer to book by phone? Call us directly: <strong>+44 20 7123
+            4567</strong></p>
       </div>
     </div>
   </section>
@@ -445,7 +605,7 @@
         </div>
         <div class="map-container">
           <div class="map-placeholder">
-            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="LIHANA Dining Location">
+            <img src="images/voorgkant.jpeg" alt="LIHANA Dining Location">
             <div class="map-overlay">
               <p class="t-map-text">📍 12 Rue Lumière, Mayfair, London</p>
             </div>
