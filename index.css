@@ -231,12 +231,6 @@ body.menu-open {
 .hero-overlay {
   z-index: 1;
 }
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -287,10 +281,11 @@ body.menu-open {
 }
 
 .hero-content {
-  position: relative;
-  z-index: 50;
   max-width: 800px;
   padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-2.5rem);
 }
 
 .hero-title {
