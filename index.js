@@ -19,7 +19,7 @@ function initNavbarScroll() {
     }
 
     if (window.scrollY > lastScrollY && window.scrollY > 100) {
-      nav.style.transform = 'translateY(-100%)';
+      nav.style.transform = `translateY(-${nav.offsetHeight}px)`;
     } else {
       nav.style.transform = 'translateY(0)';
     }
@@ -147,19 +147,21 @@ function initGSAPAnimations() {
     }
 
     // Parallax effect for hero (main page)
-    const hero = document.querySelector('.hero');
-    if (hero) {
-      gsap.to(hero, {
-        yPercent: -30,
+    const heroBg = document.querySelector('.hero-bg');
+
+    if (heroBg) {
+      gsap.to(heroBg, {
+        yPercent: -20,
         ease: "none",
         scrollTrigger: {
-          trigger: hero,
+          trigger: heroBg,
           start: "top bottom",
           end: "bottom top",
-          scrub: 1
+          scrub: true
         }
       });
     }
+
 
     // Parallax effect for tasting hero
     const tastingHero = document.querySelector('.tasting-hero');
