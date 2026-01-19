@@ -1599,11 +1599,12 @@ footer {
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+    padding-bottom: 2rem;
   }
 
   .nav nav.open {
@@ -1626,7 +1627,7 @@ footer {
   .lang-switcher.mobile {
     display: flex;
     justify-content: centre;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
   }
 
   .tasting-hero-content h1 {
