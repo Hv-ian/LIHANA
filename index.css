@@ -1240,6 +1240,10 @@ footer {
     gap: 1rem;
   }
 
+  footer .container {
+    padding: 0 1.5rem;
+  }
+
   .hero-logo-image {
     width: 120px;
   }
