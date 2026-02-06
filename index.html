@@ -40,6 +40,102 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+<!-- Navigation Modal - Centered and Elegant -->
+<div class="nav-modal" id="navModal">
+  <div class="nav-modal-overlay"></div>
+  <div class="nav-modal-container">
+    <div class="nav-modal-card">
+
+      <!-- Modal Header -->
+      <div class="nav-modal-header">
+        <div class="nav-modal-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </div>
+        <h3>Kies Navigatie App</h3>
+        <p class="nav-modal-subtitle">Navigeer naar LIHANA Eetcafé</p>
+      </div>
+
+      <!-- Navigation Options -->
+      <div class="nav-options">
+        <a href="https://www.google.com/maps?q=Bogaerdstraat+7,+1785+Merchtem,+Belgium" target="_blank"
+          class="nav-option google-maps">
+          <div class="nav-option-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <path fill="#4caf50" d="M24 4a20 20 0 1 0 0 40 20 20 0 1 0 0-40Z" />
+              <path fill="#ffffff" d="m21 28-5 5-5-5a10 10 0 1 1 20 0l-5 5-5-5Z" />
+              <circle cx="24" cy="24" r="6" fill="#4caf50" />
+            </svg>
+          </div>
+          <div class="nav-option-content">
+            <strong>Google Maps</strong>
+            <span>Meest gebruikte navigatie</span>
+          </div>
+          <div class="nav-option-arrow">›</div>
+        </a>
+
+        <a href="https://maps.apple.com/?q=Bogaerdstraat+7,+1785+Merchtem,+Belgium" target="_blank"
+          class="nav-option apple-maps">
+          <div class="nav-option-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <path fill="#000000" d="M24 4a20 20 0 1 0 0 40 20 20 0 1 0 0-40Z" />
+              <path fill="#ffffff" d="M24 12a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z" />
+            </svg>
+          </div>
+          <div class="nav-option-content">
+            <strong>Apple Maps</strong>
+            <span>Voor iPhone gebruikers</span>
+          </div>
+          <div class="nav-option-arrow">›</div>
+        </a>
+
+        <a href="https://www.waze.com/ul?q=Bogaerdstraat%207%2C%201785%20Merchtem%2C%20Belgium&navigate=yes"
+          target="_blank" class="nav-option waze">
+          <div class="nav-option-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <path fill="#3336c7" d="M24 4a20 20 0 1 0 0 40 20 20 0 1 0 0-40Z" />
+              <path fill="#ffffff" d="M24 12a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z" />
+            </svg>
+          </div>
+          <div class="nav-option-content">
+            <strong>Waze</strong>
+            <span>Realtime verkeersinfo</span>
+          </div>
+          <div class="nav-option-arrow">›</div>
+        </a>
+      </div>
+
+      <!-- Address Display -->
+      <div class="nav-address">
+        <div class="address-label">Adres:</div>
+        <div class="address-text">Bogaerdstraat 7, 1785 Merchtem, België</div>
+        <button class="address-copy" id="copyAddress">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          Kopiëren
+        </button>
+      </div>
+
+      <!-- Close Button -->
+      <div class="nav-modal-footer">
+        <button class="nav-modal-close" id="closeNavigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+          Sluiten
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <body>
   <header class="nav">
@@ -61,7 +157,6 @@
           <li><a class="t-about" href="#about">About</a></li>
           <li><a class="t-menus" href="#menus">Menus</a></li>
           <li><a class="t-gallery" href="#gallery">Gallery</a></li>
-          <li><a class="t-tasting" href="tasting.html">Tasting Menu</a></li>
           <li><a class="t-book" href="#booking">Book</a></li>
         </ul>
 
@@ -145,29 +240,38 @@
   <!-- MENUS -->
   <section id="menus" class="section alt reveal">
     <div class="container">
+
       <div class="section-header">
         <h2 class="t-menus-title">Our Menus</h2>
+
         <div class="menu-pdf">
           <a href="drukproef.pdf" target="_blank" rel="noopener" class="menu-pdf-btn">
             📄 <span class="t-menu-pdf">View full menu (PDF)</span>
           </a>
         </div>
-        <p class="t-menus-subtitle">Discover our carefully crafted culinary experiences</p>
+
+        <p class="t-menus-subtitle">
+          Discover our carefully crafted culinary experiences
+        </p>
       </div>
 
+      <!-- TABS -->
       <div class="menu-tabs">
         <button class="tab active" data-menu="dinner">
           <span class="tab-icon">🍽️</span>
           <span class="t-tab-dinner">Dinner</span>
         </button>
+
         <button class="tab" data-menu="cafe">
           <span class="tab-icon">☕</span>
           <span class="t-tab-cafe">Café</span>
         </button>
+
         <button class="tab" data-menu="dessert">
           <span class="tab-icon">🍰</span>
           <span class="t-tab-dessert">Desserts</span>
         </button>
+
         <button class="tab" data-menu="alcohol">
           <span class="tab-icon">🍷</span>
           <span class="t-tab-alcohol">Alcohol</span>
@@ -177,58 +281,64 @@
       <!-- DINNER -->
       <div class="menu-content active" id="dinner">
 
-        <!-- Starters -->
+        <!-- STARTERS -->
         <div class="wine-category">
           <h3 class="t-starters-title">Starters</h3>
           <ul class="wine-list">
-            <li><strong>Cheese croquette (1)</strong><span></span><span class="price">€6.5</span></li>
-            <li><strong>Shrimp croquette (2)</strong><span></span><span class="price">€15</span></li>
-            <li><strong>Scampi garlic (5)</strong><span></span><span class="price">€17</span></li>
-            <li><strong>Duo cheese & shrimp croquettes</strong><span></span><span class="price">€14</span></li>
+            <li><strong class="t-starter-cheese">Cheese croquette (1)</strong><span></span><span
+                class="price">€6.5</span></li>
+            <li><strong class="t-starter-shrimp">Shrimp croquette (2)</strong><span></span><span
+                class="price">€15</span></li>
+            <li><strong class="t-starter-scampi">Scampi garlic (5)</strong><span></span><span class="price">€17</span>
+            </li>
+            <li><strong class="t-starter-duo">Duo cheese & shrimp croquettes</strong><span></span><span
+                class="price">€14</span></li>
           </ul>
         </div>
 
-        <!-- Main dishes -->
+        <!-- MAIN DISHES -->
         <div class="wine-category">
           <h3 class="t-mains-title">Main Dishes</h3>
 
-          <!-- Steak ±300 g -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/steak300g.jpeg" alt="Steak 300 grams">
             </div>
             <div class="dish-content">
-              <h3>Steak ±300 g</h3>
-              <p>Grilled beef steak, served with chips and sauce of choice</p>
+              <h3 class="t-main-steak300-title">Steak ±300 g</h3>
+              <p class="t-main-steak300-desc">
+                Grilled beef steak, served with chips and sauce of choice
+              </p>
             </div>
             <div class="price">€26</div>
           </div>
 
-          <!-- Small steak ±180 g -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/steak klein 180 kroket.jpeg" alt="Small steak 180 grams">
             </div>
             <div class="dish-content">
-              <h3>Small steak ±180 g</h3>
-              <p>Smaller cut of beef steak, served with croquettes</p>
+              <h3 class="t-main-steak180-title">Small steak ±180 g</h3>
+              <p class="t-main-steak180-desc">
+                Smaller cut of beef steak, served with croquettes
+              </p>
             </div>
             <div class="price">€22</div>
           </div>
 
-          <!-- Small steak ±180 g – pepper sauce -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/steak klein 180 pepper sause.jpeg" alt="Small steak pepper sauce">
             </div>
             <div class="dish-content">
-              <h3>Small steak ±180 g</h3>
-              <p>Served with creamy pepper sauce and croquettes</p>
+              <h3 class="t-main-steak180pepper-title">Small steak ±180 g</h3>
+              <p class="t-main-steak180pepper-desc">
+                Served with creamy pepper sauce and croquettes
+              </p>
             </div>
             <div class="price">€22</div>
           </div>
 
-          <!-- Tagliata di manzo -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/Tagliata di manzo ±250 g.jpeg" alt="Tagliata di manzo">
@@ -240,7 +350,6 @@
             <div class="price">€28</div>
           </div>
 
-          <!-- Pork cheek stew -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/Stoofvlees van varkenswangetjes.jpeg" alt="Pork cheek stew">
@@ -252,7 +361,6 @@
             <div class="price">€21</div>
           </div>
 
-          <!-- Scampi in tomato cream sauce -->
           <div class="dish">
             <div class="dish-image">
               <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Scampi tomato cream sauce">
@@ -264,154 +372,153 @@
             <div class="price">€25</div>
           </div>
 
-          <!-- Remaining mains without images -->
           <ul class="wine-list">
-            <li>
-              <strong>Chicken brochette (2 pcs)</strong>
-              <span></span>
-              <span class="price">€25</span>
-            </li>
-            <li>
-              <strong>Vol-au-vent</strong>
-              <span></span>
-              <span class="price">€21</span>
-            </li>
-            <li>
-              <strong>Trout fillet with herb butter</strong>
-              <span></span>
-              <span class="price">€27</span>
-            </li>
-            <li>
-              <strong>Tagliatelle scampi</strong>
-              <span></span>
-              <span class="price">€25</span>
-            </li>
+            <li><strong>Chicken brochette (2 pcs)</strong><span></span><span class="price">€25</span></li>
+            <li><strong class="t-main-volauvent">Vol-au-vent</strong><span></span><span class="price">€21</span></li>
+            <li><strong class="t-main-trout">Trout fillet with herb butter</strong><span></span><span
+                class="price">€27</span></li>
+            <li><strong class="t-main-tagliatelle">Tagliatelle scampi</strong><span></span><span
+                class="price">€25</span></li>
           </ul>
         </div>
 
-
-        <!-- Snacks -->
+        <!-- SNACKS -->
         <div class="wine-category">
           <h3 class="t-snacks-title">Snacks</h3>
           <ul class="wine-list">
-            <li><strong>Bitterballen</strong><span></span><span class="price">€7</span></li>
-            <li><strong>Crispy chicken</strong><span></span><span class="price">€7</span></li>
-            <li><strong>Calamari</strong><span></span><span class="price">€7</span></li>
-            <li><strong>Mixed snack platter</strong><span></span><span class="price">€22</span></li>
+            <li><strong class="t-snack-bitterballen">Bitterballen</strong><span></span><span class="price">€7</span>
+            </li>
+            <li><strong class="t-snack-chicken">Crispy chicken</strong><span></span><span class="price">€7</span></li>
+            <li><strong class="t-snack-calamari">Calamari</strong><span></span><span class="price">€7</span></li>
+            <li><strong class="t-snack-mixed">Mixed snack platter</strong><span></span><span class="price">€22</span>
+            </li>
           </ul>
         </div>
 
       </div>
-
 
       <!-- CAFE -->
       <div class="menu-content" id="cafe">
         <div class="wine-category">
           <h3 class="t-hotdrinks-title">Hot Drinks</h3>
           <ul class="wine-list">
-            <li><strong>Coffee</strong><span></span><span class="price">€2.5</span></li>
-            <li><strong>Espresso</strong><span></span><span class="price">€2.5</span></li>
-            <li><strong>Cappuccino</strong><span></span><span class="price">€4</span></li>
-            <li><strong>Latte</strong><span></span><span class="price">€4</span></li>
-            <li><strong>Hot chocolate</strong><span></span><span class="price">€3</span></li>
-            <li><strong>Tea (selection)</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-drink-coffee">Coffee</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-drink-espresso">Espresso</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-drink-cappuccino">Cappuccino</strong><span></span><span class="price">€4</span></li>
+            <li><strong class="t-drink-latte">Latte</strong><span></span><span class="price">€4</span></li>
+            <li><strong class="t-drink-chocolate">Hot chocolate</strong><span></span><span class="price">€3</span></li>
+            <li><strong class="t-drink-tea">Tea (selection)</strong><span></span><span class="price">€2.5</span></li>
           </ul>
         </div>
       </div>
 
-
-      <!-- DESSERT -->
+      <!-- DESSERTS -->
       <div class="menu-content" id="dessert">
         <div class="wine-category">
           <h3 class="t-desserts-title">Desserts</h3>
           <ul class="wine-list">
-
-            <li><strong>Dame blanche (1 scoop)</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Dame blanche (2 scoops)</strong><span></span><span class="price">€9</span></li>
-
-            <li><strong>Coupe advocaat (1 scoop)</strong><span></span><span class="price">€7</span></li>
-            <li><strong>Coupe advocaat (2 scoops)</strong><span></span><span class="price">€10</span></li>
-
-            <li><strong>Coupe brésilienne (1 scoop)</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Coupe brésilienne (2 scoops)</strong><span></span><span class="price">€9</span></li>
-
-            <li><strong>Moelleux au chocolat</strong><span></span><span class="price">€9</span></li>
-
-            <li><strong>Pancake with sugar (1 pc)</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Pancake with sugar (2 pcs)</strong><span></span><span class="price">€8</span></li>
-
-            <li><strong>Pancake with ice cream (1 pc)</strong><span></span><span class="price">€8</span></li>
-            <li><strong>Pancake with ice cream (2 pcs)</strong><span></span><span class="price">€10</span></li>
-
-            <li><strong>Pancake brésilienne (1 pc)</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Pancake brésilienne (2 pcs)</strong><span></span><span class="price">€8</span></li>
-
-            <li><strong>Pancake advocaat (1 pc)</strong><span></span><span class="price">€8</span></li>
-            <li><strong>Pancake advocaat (2 pcs)</strong><span></span><span class="price">€10</span></li>
-
-            <li><strong>Waffle with topping (chocolate, strawberry or caramel)</strong><span></span><span
+            <li><strong class="t-dessert-dame1">Dame blanche (1 scoop)</strong><span></span><span
                 class="price">€6</span></li>
+            <li><strong class="t-dessert-dame2">Dame blanche (2 scoops)</strong><span></span><span
+                class="price">€9</span></li>
 
-            <li><strong>Children’s ice cream (Cornetto)</strong><span></span><span class="price">€3</span></li>
+            <li><strong class="t-dessert-advocaat1">Coupe advocaat (1 scoop)</strong><span></span><span
+                class="price">€7</span></li>
+            <li><strong class="t-dessert-advocaat2">Coupe advocaat (2 scoops)</strong><span></span><span
+                class="price">€10</span></li>
 
-            <li><strong>Armenian honey cake (slice)</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-dessert-bres1">Coupe brésilienne (1 scoop)</strong><span></span><span
+                class="price">€6</span></li>
+            <li><strong class="t-dessert-bres2">Coupe brésilienne (2 scoops)</strong><span></span><span
+                class="price">€9</span></li>
 
-            <li><strong>Chips (salt)</strong><span></span><span class="price">€2.5</span></li>
-            <li><strong>Chips (paprika)</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-dessert-moelleux">Moelleux au chocolat</strong><span></span><span
+                class="price">€9</span></li>
 
+            <li><strong class="t-dessert-pancake-sugar1">Pancake with sugar (1 pc)</strong><span></span><span
+                class="price">€6</span></li>
+            <li><strong class="t-dessert-pancake-sugar2">Pancake with sugar (2 pcs)</strong><span></span><span
+                class="price">€8</span></li>
+
+            <li><strong class="t-dessert-pancake-ice1">Pancake with ice cream (1 pc)</strong><span></span><span
+                class="price">€8</span></li>
+            <li><strong class="t-dessert-pancake-ice2">Pancake with ice cream (2 pcs)</strong><span></span><span
+                class="price">€10</span></li>
+
+            <li><strong class="t-dessert-pancake-bres1">Pancake brésilienne (1 pc)</strong><span></span><span
+                class="price">€6</span></li>
+            <li><strong class="t-dessert-pancake-bres2">Pancake brésilienne (2 pcs)</strong><span></span><span
+                class="price">€8</span></li>
+
+            <li><strong class="t-dessert-pancake-adv1">Pancake advocaat (1 pc)</strong><span></span><span
+                class="price">€8</span></li>
+            <li><strong class="t-dessert-pancake-adv2">Pancake advocaat (2 pcs)</strong><span></span><span
+                class="price">€10</span></li>
+
+            <li><strong class="t-dessert-waffle">Waffle with topping</strong><span></span><span class="price">€6</span>
+            </li>
+            <li><strong class="t-dessert-kids">Children’s ice cream (Cornetto)</strong><span></span><span
+                class="price">€3</span></li>
+
+            <li><strong class="t-dessert-honeycake">Armenian honey cake (slice)</strong><span></span><span
+                class="price">€2.5</span></li>
+
+            <li><strong class="t-dessert-chips-salt">Chips (salt)</strong><span></span><span class="price">€2.5</span>
+            </li>
+            <li><strong class="t-dessert-chips-paprika">Chips (paprika)</strong><span></span><span
+                class="price">€2.5</span></li>
           </ul>
         </div>
       </div>
 
 
-
-      <!-- WINE -->
+      <!-- ALCOHOL -->
+      <!-- ALCOHOL -->
       <div class="menu-content" id="alcohol">
 
-        <!-- Aperitifs -->
         <div class="wine-category">
           <h3 class="t-aperitifs-title">Aperitifs</h3>
           <ul class="wine-list">
-            <li><strong>Kirr</strong><span></span><span class="price">€5</span></li>
-            <li><strong>Kirr Royal</strong><span></span><span class="price">€6.5</span></li>
-            <li><strong>Cava (glass)</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Cava (bottle)</strong><span></span><span class="price">€26</span></li>
-            <li><strong>Martini (white / red)</strong><span></span><span class="price">€5</span></li>
+            <li><strong class="t-alc-kirr">Kirr</strong><span></span><span class="price">€5</span></li>
+            <li><strong class="t-alc-kirr-royal">Kirr Royal</strong><span></span><span class="price">€6.5</span></li>
+            <li><strong class="t-alc-cava-glass">Cava (glass)</strong><span></span><span class="price">€6</span></li>
+            <li><strong class="t-alc-cava-bottle">Cava (bottle)</strong><span></span><span class="price">€26</span></li>
+            <li><strong class="t-alc-martini">Martini (white / red)</strong><span></span><span class="price">€5</span>
+            </li>
           </ul>
         </div>
 
-        <!-- Cocktails -->
         <div class="wine-category">
           <h3 class="t-cocktails-title">Cocktails</h3>
           <ul class="wine-list">
-            <li><strong>Mojito</strong><span></span><span class="price">€9</span></li>
-            <li><strong>Strawberry Mojito</strong><span></span><span class="price">€11</span></li>
-            <li><strong>Gin & Tonic</strong><span></span><span class="price">€9</span></li>
-            <li><strong>Aperol Spritz</strong><span></span><span class="price">€9</span></li>
+            <li><strong class="t-alc-mojito">Mojito</strong><span></span><span class="price">€9</span></li>
+            <li><strong class="t-alc-mojito-strawberry">Strawberry Mojito</strong><span></span><span
+                class="price">€11</span></li>
+            <li><strong class="t-alc-gin-tonic">Gin & Tonic</strong><span></span><span class="price">€9</span></li>
+            <li><strong class="t-alc-aperol">Aperol Spritz</strong><span></span><span class="price">€9</span></li>
           </ul>
         </div>
 
-        <!-- Beers -->
         <div class="wine-category">
           <h3 class="t-beers-title">Beers</h3>
           <ul class="wine-list">
-            <li><strong>Duvel</strong><span></span><span class="price">€4.5</span></li>
-            <li><strong>Westmalle Tripel</strong><span></span><span class="price">€5</span></li>
-            <li><strong>Tripel Karmeliet</strong><span></span><span class="price">€5</span></li>
-            <li><strong>Hoegaarden White</strong><span></span><span class="price">€2.7</span></li>
-            <li><strong>Carlsberg 0%</strong><span></span><span class="price">€3</span></li>
+            <li><strong class="t-alc-duvel">Duvel</strong><span></span><span class="price">€4.5</span></li>
+            <li><strong class="t-alc-westmalle">Westmalle Tripel</strong><span></span><span class="price">€5</span></li>
+            <li><strong class="t-alc-karmeliet">Tripel Karmeliet</strong><span></span><span class="price">€5</span></li>
+            <li><strong class="t-alc-hoegaarden">Hoegaarden White</strong><span></span><span class="price">€2.7</span>
+            </li>
+            <li><strong class="t-alc-carlsberg0">Carlsberg 0%</strong><span></span><span class="price">€3</span></li>
           </ul>
         </div>
 
-        <!-- Spirits -->
         <div class="wine-category">
           <h3 class="t-spirits-title">Spirits & Digestifs</h3>
           <ul class="wine-list">
-            <li><strong>Baileys</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Amaretto</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Grand Marnier</strong><span></span><span class="price">€6</span></li>
-            <li><strong>Cognac</strong><span></span><span class="price">€7</span></li>
-            <li><strong>Jack Daniel’s</strong><span></span><span class="price">€7</span></li>
+            <li><strong class="t-alc-baileys">Baileys</strong><span></span><span class="price">€6</span></li>
+            <li><strong class="t-alc-amaretto">Amaretto</strong><span></span><span class="price">€6</span></li>
+            <li><strong class="t-alc-grandmarnier">Grand Marnier</strong><span></span><span class="price">€6</span></li>
+            <li><strong class="t-alc-cognac">Cognac</strong><span></span><span class="price">€7</span></li>
+            <li><strong class="t-alc-jackdaniels">Jack Daniel’s</strong><span></span><span class="price">€7</span></li>
           </ul>
         </div>
 
@@ -419,6 +526,7 @@
 
     </div>
   </section>
+
 
   <!-- GALLERY -->
   <section id="gallery" class="section reveal">
@@ -456,13 +564,31 @@
           </div>
 
           <div class="gallery-slide">
-            <img src="images/bar2.jpeg" alt="Dessert Presentation">
+            <img src="images/mixgrill.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
               <span class="t-gallery4">Artisan Desserts</span>
             </div>
           </div>
           <div class="gallery-slide">
-            <img src="images/inside2.jpeg" alt="Dessert Presentation">
+            <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Dessert Presentation">
+            <div class="gallery-overlay">
+              <span class="t-gallery4">Artisan Desserts</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <img src="images/Stoofvlees van varkenswangetjes.jpeg" alt="Dessert Presentation">
+            <div class="gallery-overlay">
+              <span class="t-gallery4">Artisan Desserts</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <img src="images/Tagliata di manzo ±250 g.jpeg" alt="Dessert Presentation">
+            <div class="gallery-overlay">
+              <span class="t-gallery4">Artisan Desserts</span>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <img src="images/steak300g.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
               <span class="t-gallery4">Artisan Desserts</span>
             </div>
@@ -474,111 +600,91 @@
     </div>
   </section>
 
-
-  <!-- BOOKING -->
+  <!-- BOOKING / CALENDLY -->
   <section id="booking" class="section alt reveal">
     <div class="container">
+
+      <!-- Enhanced Header with Belgian flair -->
       <div class="section-header">
-        <h2 class="t-book-title">Reserve Your Experience</h2>
-        <p class="t-book-subtitle">Secure your table for an unforgettable dining experience</p>
-      </div>
-
-      <div class="booking-form-container">
-        <form class="booking-form" id="bookingForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name" class="t-form-name">Full Name</label>
-              <input type="text" id="name" name="name" required class="t-form-name-placeholder"
-                placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-              <label for="email" class="t-form-email">Email Address</label>
-              <input type="email" id="email" name="email" required placeholder="your@email.com">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="phone" class="t-form-phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required class="t-form-phone-placeholder"
-                placeholder="+1 (555) 123-4567">
-            </div>
-            <div class="form-group">
-              <label for="guests" class="t-form-guests">Number of Guests</label>
-              <select id="guests" name="guests" required>
-                <option value="" disabled selected class="t-form-guests-default">Select number of guests</option>
-                <option value="1" class="t-form-guests-1">1 person</option>
-                <option value="2" class="t-form-guests-2">2 people</option>
-                <option value="3" class="t-form-guests-3">3 people</option>
-                <option value="4" class="t-form-guests-4">4 people</option>
-                <option value="5" class="t-form-guests-5">5 people</option>
-                <option value="6" class="t-form-guests-6">6 people</option>
-                <option value="7" class="t-form-guests-7">7+ people (special arrangement)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="date" class="t-form-date">Preferred Date</label>
-              <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-              <label for="time" class="t-form-time">Preferred Time</label>
-              <select id="time" name="time" required>
-                <option value="" disabled selected class="t-form-time-default">Select preferred time</option>
-                <option value="17:00">5:00 PM</option>
-                <option value="17:30">5:30 PM</option>
-                <option value="18:00">6:00 PM</option>
-                <option value="18:30">6:30 PM</option>
-                <option value="19:00">7:00 PM</option>
-                <option value="19:30">7:30 PM</option>
-                <option value="20:00">8:00 PM</option>
-                <option value="20:30">8:30 PM</option>
-                <option value="21:00">9:00 PM</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group full-width">
-            <label for="special-requests" class="t-form-requests">Special Requests</label>
-            <textarea id="special-requests" name="special-requests" rows="4" class="t-form-requests-placeholder"
-              placeholder="Dietary restrictions, allergies, celebrations, or any special requirements..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary submit-btn">
-            <span class="btn-text t-submit-btn">Reserve Now</span>
-            <span class="btn-loading t-submit-loading" style="display: none;">Processing...</span>
-          </button>
-        </form>
-
-        <div class="booking-confirmation" id="bookingConfirmation" style="display: none;">
-          <div class="confirmation-content">
-            <div class="confirmation-icon">✓</div>
-            <h3 class="t-confirm-title">Reservation Confirmed!</h3>
-            <p class="t-confirm-message">Thank you for choosing LIHANA Dining. We've received your booking request and
-              will send a confirmation email shortly.</p>
-            <div class="confirmation-details">
-              <p class="t-confirm-steps"><strong>Next Steps:</strong></p>
-              <ul>
-                <li class="t-confirm-step1">Check your email for confirmation</li>
-                <li class="t-confirm-step2">Arrive 15 minutes early</li>
-                <li class="t-confirm-step3">Present your confirmation at reception</li>
-              </ul>
-            </div>
-            <button class="btn btn-secondary" id="newBooking">
-              <span class="t-new-booking">Make Another Reservation</span>
-            </button>
-          </div>
+        <div class="section-header-decor">
+          <span class="decor-line"></span>
+          <h2 class="t-book-title">Reserveer Uw Tafel</h2>
+          <span class="decor-line"></span>
+        </div>
+        <p class="t-book-subtitle">
+          Verzeker uw plaats voor een onvergetelijke Belgische gastronomische ervaring.
+          <br>Wij kijken ernaar uit u te verwelkomen bij LIHANA Eetcafé.
+        </p>
+        <div class="belgian-flag">
+          <span class="flag-black"></span>
+          <span class="flag-yellow"></span>
+          <span class="flag-red"></span>
         </div>
       </div>
 
-      <div class="contact-alternative">
-        <p class="alt-text t-phone-alternative">Prefer to book by phone? Call us directly: <strong>+44 20 7123
-            4567</strong></p>
+      <!-- Elegant Booking Container -->
+      <div class="booking-elegant-wrapper">
+        <div class="booking-card">
+          <div class="booking-card-header">
+            <h3>Online Reservatie</h3>
+            <p>Selecteer uw voorkeursdatum en tijdstip</p>
+          </div>
+
+          <div class="calendly-container">
+            <!-- Calendly inline widget -->
+            <div class="calendly-inline-widget"
+              data-url="https://calendly.com/lihana-7977/1_t?hide_event_type_details=1&hide_gdpr_banner=1&background_color=fcfcfc&text_color=000000&primary_color=000000"
+              style="min-width:320px;height:550px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Alternative Booking Options -->
+        <div class="booking-alternatives">
+          <div class="alternative-option phone-clickable">
+            <div class="alternative-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="alternative-content">
+              <h4>Telefonische Reservatie</h4>
+              <p class="alt-text t-phone-alternative">
+                Wenst u liever telefonisch te reserveren?<br>
+                <a href="tel:+32470771105" class="phone-link">
+                  Bel ons direct: <span class="phone-number">0470 77 11 05</span>
+                </a>
+              </p>
+              <p class="opening-hours">
+                <small>Telefonisch bereikbaar: Ma-Zo, 12:00 - 22:00</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Reservation Tips -->
+      <!-- Reservation Tips -->
+      <div class="reservation-tips">
+        <p class="tip">
+          <strong class="t-reservation-tip-label">Tip:</strong>
+          <span class="t-reservation-tip-text">
+            Voor groepen groter dan 6 personen adviseren wij vooraf te reserveren.
+            Speciale gelegenheden? Vermeld dit bij uw reservering.
+          </span>
+        </p>
+      </div>
+
+
     </div>
   </section>
+
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 
   <!-- CONTACT -->
   <section id="contact" class="section reveal">
@@ -586,54 +692,72 @@
       <div class="contact-grid">
         <div class="contact-info">
           <h2 class="t-contact-title">Visit Us</h2>
+
           <div class="contact-item">
             <div class="contact-icon">📍</div>
             <div>
               <strong class="t-contact-address-label">Address</strong>
-              <p class="t-contact-address">12 Rue Lumière, Mayfair<br>London W1K 4QU</p>
+              <p class="t-contact-address">
+                Bogaerdstraat 7, 1785 Merchtem<br>
+                België
+              </p>
             </div>
           </div>
+
           <div class="contact-item">
             <div class="contact-icon">📞</div>
             <div>
               <strong class="t-contact-phone-label">Phone</strong>
-              <p class="t-contact-phone">+44 20 7123 4567</p>
+              <p class="t-contact-phone">0470771105</p>
             </div>
           </div>
+
           <div class="contact-item">
             <div class="contact-icon">✉️</div>
             <div>
               <strong class="t-contact-email-label">Email</strong>
-              <p class="t-contact-email">reservations@LIHANAdining.com</p>
+              <p class="t-contact-email">Lihana.7977@gmail.com</p>
             </div>
           </div>
+
           <div class="contact-item">
             <div class="contact-icon">🕒</div>
             <div>
               <strong class="t-contact-hours-label">Hours</strong>
-              <p class="t-contact-hours">Monday - Sunday: 8am – 11pm<br>Weekend Brunch: 10am - 3pm</p>
+              <p class="t-contact-hours">
+                Monday – Sunday: 11am – 22pm<br>
+                Weekend Brunch: 11am – 1pm
+              </p>
             </div>
           </div>
         </div>
+
         <div class="map-container">
           <div class="map-placeholder">
-            <img src="images/voorgkant.jpeg" alt="LIHANA Dining Location">
-            <div class="map-overlay">
-              <p class="t-map-text">📍 12 Rue Lumière, Mayfair, London</p>
-            </div>
+            <iframe src="https://www.google.com/maps?q=Bogaerdstraat%207,%201785%20Merchtem,%20Belgium&output=embed"
+              width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <button class="navigate-btn t-contact-navigate" id="openNavigation">
+              Navigate
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+
   <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
           <h3 class="t-footer-logo">LIHANA Eetcafé</h3>
-          <p class="t-footer-desc">Belgian elegance meets modern refinement in the heart of London.</p>
+          <p class="t-footer-desc">
+            Belgian culture meets modern refinement in the heart of Merchtem.
+          </p>
         </div>
+
         <div class="footer-section">
           <h4 class="t-footer-links">Quick Links</h4>
           <ul>
@@ -643,6 +767,7 @@
             <li><a href="#booking" class="t-footer-reservations">Reservations</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
           <h4 class="t-footer-connect">Connect</h4>
           <ul>
@@ -651,20 +776,29 @@
             <li><a href="#" class="t-footer-twitter">Twitter</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
           <h4 class="t-footer-newsletter">Newsletter</h4>
-          <p class="t-footer-newsletter-desc">Subscribe for exclusive offers and events</p>
+          <p class="t-footer-newsletter-desc">
+            Subscribe for exclusive offers and events
+          </p>
           <div class="newsletter-form">
             <input type="email" class="t-footer-email-placeholder" placeholder="Your email address">
-            <button type="submit" class="t-footer-subscribe">Subscribe</button>
+            <button type="submit" class="t-footer-subscribe">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p class="t-footer-copyright">© 2024 LIHANA Eetcafé — All rights reserved. Crafted with passion in London.</p>
+        <p class="t-footer-copyright">
+          © 2024 LIHANA Eetcafé — All rights reserved. Crafted with passion in London.
+        </p>
       </div>
     </div>
   </footer>
+
 
   <script src="index.js"></script>
 
