@@ -474,6 +474,7 @@ function initLanguageSystem() {
 
       // Booking
       't-book-title': 'Reservation',
+      't-telefone-reservation': 'Phone Reservation',
       't-book-subtitle':
         'Secure your table for a pleasant dining experience. We look forward to welcoming you to LIHANA Eetcafé.',
       't-phone-alternative':
@@ -482,6 +483,10 @@ function initLanguageSystem() {
       't-reservation-tip-label': 'Tip:',
       't-reservation-tip-text':
         'For groups larger than 6 people, we recommend reserving in advance. Special occasion? Please mention it when making your reservation.',
+      't-reserveren-header': 'Online Reservation',
+      't-reservere-text': 'Select your preferred date and time',
+
+      't-contact-navigate': 'Navigate',
       // Footer
       't-footer-logo': 'Eetcafé LIHANA',
       't-footer-desc':
@@ -717,6 +722,7 @@ function initLanguageSystem() {
 
       // Booking
       't-book-title': 'Réservation',
+      't-telefone-reservation': 'Réservation par téléphone',
       't-book-subtitle':
         'Réservez votre table pour une expérience culinaire agréable. Nous avons hâte de vous accueillir chez LIHANA Eetcafé.',
       't-phone-alternative':
@@ -724,8 +730,9 @@ function initLanguageSystem() {
 
       // Reservation tip
       't-reservation-tip-label': 'Conseil :',
-      't-reservation-tip-text':
-        'Pour les groupes de plus de 6 personnes, nous recommandons de réserver à l’avance. Occasion spéciale ? Merci de le mentionner lors de votre réservation.',
+      't-reservation-tip-text':'Pour les groupes de plus de 6 personnes, nous recommandons de réserver à l’avance. Occasion spéciale ? Merci de le mentionner lors de votre réservation.',
+      't-reserveren-header': 'Réservation en ligne',
+      't-reservere-text': 'Sélectionnez votre date et heure préférées',
 
       // Footer
       't-footer-logo': 'Eetcafé LIHANA',
@@ -960,14 +967,16 @@ function initLanguageSystem() {
 
       // Booking
       't-book-title': 'Reservering',
+      't-telefone-reservation': 'Telefonische Reservatie',
       't-book-subtitle':
         'Reserveer uw tafel voor een aangename culinaire ervaring. Wij kijken ernaar uit u te verwelkomen bij LIHANA Eetcafé.',
       't-phone-alternative':
         'Liever telefonisch reserveren? Bel ons rechtstreeks: 0470771105 📞',
       // Reservation tip
       't-reservation-tip-label': 'Tip:',
-      't-reservation-tip-text':
-        'Voor groepen groter dan 6 personen adviseren wij vooraf te reserveren. Speciale gelegenheden? Vermeld dit bij uw reservering.',
+      't-reservation-tip-text':'Voor groepen groter dan 6 personen adviseren wij vooraf te reserveren. Speciale gelegenheden? Vermeld dit bij uw reservering.',
+      't-reserveren-header': 'Online Reservering',
+      't-reservere-text': 'Selecteer uw gewenste datum en tijd',
 
       // Footer
       't-footer-logo': 'EETCAFÉ LIHANA',
