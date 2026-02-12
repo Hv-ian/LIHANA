@@ -108,33 +108,33 @@
         </a>
       </div>
 
-      <!-- Address Display -->
-      <div class="nav-address">
-        <div class="address-label">Adres:</div>
-        <div class="address-text">Bogaerdstraat 7, 1785 Merchtem, België</div>
-        <button class="address-copy" id="copyAddress">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-          </svg>
-          Kopiëren
-        </button>
+      <div class="nav-scroll-area"></div>
+        <!-- Address Display -->
+        <div class="nav-address">
+          <div class="address-label">Adres:</div>
+          <div class="address-text">Bogaerdstraat 7, 1785 Merchtem, België</div>
+          <button class="address-copy" id="copyAddress">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+            Kopiëren
+          </button>
+        </div>
       </div>
-
-      <!-- Close Button -->
-      <div class="nav-modal-footer">
-        <button class="nav-modal-close" id="closeNavigation">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-          Sluiten
-        </button>
-      </div>
+    <!-- Close Button -->
+    <div class="nav-modal-footer">
+      <button class="nav-modal-close" id="closeNavigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        Sluiten
+      </button>
     </div>
   </div>
+</div>
 </div>
 
 <body>
@@ -147,7 +147,7 @@
 
     <div class="brand">
       <img src="images/logo.png" alt="LIHANA logo" class="brand-logo">
-      <div class="logo t-logo">LIHANA EETCAFÉ</div>
+      <div class="logo t-logo">EETCAFÉ LIHANA</div>
     </div>
 
     <div class="nav-right">
@@ -217,12 +217,8 @@
           </p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-number">15+</span>
-              <span class="stat-label t-stat1">Years Experience</span>
-            </div>
-            <div class="stat">
               <span class="stat-number">10+</span>
-              <span class="stat-label t-stat2">Wine Selection</span>
+              <span class="stat-label t-stat2">Beer Selection</span>
             </div>
             <div class="stat">
               <span class="stat-number">4.9</span>
@@ -242,7 +238,7 @@
     <div class="container">
 
       <div class="section-header">
-        <h2 class="t-menus-title">Our Menus</h2>
+        <h2 class="t-menus-title">Our Menu</h2>
 
         <div class="menu-pdf">
           <a href="drukproef.pdf" target="_blank" rel="noopener" class="menu-pdf-btn">
@@ -264,7 +260,7 @@
 
         <button class="tab" data-menu="cafe">
           <span class="tab-icon">☕</span>
-          <span class="t-tab-cafe">Café</span>
+          <span class="t-tab-cafe">Warm Drinks</span>
         </button>
 
         <button class="tab" data-menu="dessert">
@@ -273,8 +269,8 @@
         </button>
 
         <button class="tab" data-menu="alcohol">
-          <span class="tab-icon">🍷</span>
-          <span class="t-tab-alcohol">Alcohol</span>
+          <span class="tab-icon">🍹</span>
+          <span class="t-tab-alcohol">Drinks</span>
         </button>
       </div>
 
@@ -285,14 +281,36 @@
         <div class="wine-category">
           <h3 class="t-starters-title">Starters</h3>
           <ul class="wine-list">
-            <li><strong class="t-starter-cheese">Cheese croquette (1)</strong><span></span><span
-                class="price">€6.5</span></li>
-            <li><strong class="t-starter-shrimp">Shrimp croquette (2)</strong><span></span><span
-                class="price">€15</span></li>
+            <li><strong class="t-starter-cheese">Cheese croquette 1/2/3</strong><span></span><span
+                class="price">€6.5/€9.5/€13</span></li>
+            <li><strong class="t-starter-shrimp">Shrimp croquette 1/2/3</strong><span></span><span
+                class="price">€10/€15/€20</span></li>
             <li><strong class="t-starter-scampi">Scampi garlic (5)</strong><span></span><span class="price">€17</span>
             </li>
-            <li><strong class="t-starter-duo">Duo cheese & shrimp croquettes</strong><span></span><span
-                class="price">€14</span></li>
+            <li><strong class="t-starter-scampi-tomaat">Scampi tomaat (5)</strong><span></span><span
+                class="price">€17</span>
+            </li>
+            <li><strong class="t-starter-scampi-diabolo">Scampi diabolo (5)</strong><span></span><span
+                class="price">€17</span>
+            </li>
+            <li><strong class="t-starter-duo">Duo cheese & shrimp</strong><span></span><span class="price">€14</span>
+            </li>
+            <li><strong class="t-starter-friet">Friet</strong><span></span><span class="price">€3.0</span></li>
+
+          </ul>
+        </div>
+
+        <div class="wine-category">
+          <h3 class="t-starters-hapjes">Hapjes</h3>
+          <ul class="wine-list">
+            <li><strong class="t-starters-bitterballen">Portie Bitterballen</strong><span></span><span
+                class="price">€7.0</span></li>
+            <li><strong class="t-starters-calamares">Portie Calamares</strong><span></span><span
+                class="price">€7.0</span></li>
+            <li><strong class="t-starters-crispy-chicken">Portie crispy chicken</strong><span></span><span
+                class="price">€7.0</span></li>
+            <li><strong class="t-starters-loempias">Portie mini loempia's</strong><span></span><span
+                class="price">€7.0</span></li>
           </ul>
         </div>
 
@@ -318,22 +336,9 @@
               <img src="images/steak klein 180 kroket.jpeg" alt="Small steak 180 grams">
             </div>
             <div class="dish-content">
-              <h3 class="t-main-steak180-title">Small steak ±180 g</h3>
+              <h3 class="t-main-steak180-title">Steak ±180 g</h3>
               <p class="t-main-steak180-desc">
-                Smaller cut of beef steak, served with croquettes
-              </p>
-            </div>
-            <div class="price">€22</div>
-          </div>
-
-          <div class="dish">
-            <div class="dish-image">
-              <img src="images/steak klein 180 pepper sause.jpeg" alt="Small steak pepper sauce">
-            </div>
-            <div class="dish-content">
-              <h3 class="t-main-steak180pepper-title">Small steak ±180 g</h3>
-              <p class="t-main-steak180pepper-desc">
-                Served with creamy pepper sauce and croquettes
+                Smaller cut of beef steak, served with croquettes and sauce of choice
               </p>
             </div>
             <div class="price">€22</div>
@@ -344,8 +349,10 @@
               <img src="images/Tagliata di manzo ±250 g.jpeg" alt="Tagliata di manzo">
             </div>
             <div class="dish-content">
-              <h3>Tagliata di manzo ±250 g</h3>
-              <p>Sliced beef steak with rocket, Parmesan and olive oil</p>
+              <h3 class="t-main-tagliata-title">Tagliata di manzo ±250 g</h3>
+              <p class="t-main-tagliata-desc">
+                Sliced beef steak with rocket, Parmesan and olive oil
+              </p>
             </div>
             <div class="price">€28</div>
           </div>
@@ -355,8 +362,8 @@
               <img src="images/Stoofvlees van varkenswangetjes.jpeg" alt="Pork cheek stew">
             </div>
             <div class="dish-content">
-              <h3>Pork cheek stew</h3>
-              <p>Slow-cooked pork cheeks in a rich Belgian-style gravy</p>
+              <h3 class="t-main-stoofvlees-title">Pork cheek stew</h3>
+              <p class="t-main-stoofvlees-desc">Slow-cooked pork cheeks in a rich Belgian-style gravy</p>
             </div>
             <div class="price">€21</div>
           </div>
@@ -366,14 +373,15 @@
               <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Scampi tomato cream sauce">
             </div>
             <div class="dish-content">
-              <h3>Scampi in tomato cream sauce</h3>
-              <p>Ten scampi served in a tomato and cream sauce</p>
+              <h3 class="t-main-scampi-tomaat-title">Scampi in tomato cream sauce</h3>
+              <p class="t-main-scampi-tomaat-desc">Ten scampi served in a tomato and cream sauce</p>
             </div>
             <div class="price">€25</div>
           </div>
 
           <ul class="wine-list">
-            <li><strong>Chicken brochette (2 pcs)</strong><span></span><span class="price">€25</span></li>
+            <li><strong class="t-main-chicken-brochette">Chicken brochette 1/2</strong><span></span><span
+                class="price">€19/€25</span></li>
             <li><strong class="t-main-volauvent">Vol-au-vent</strong><span></span><span class="price">€21</span></li>
             <li><strong class="t-main-trout">Trout fillet with herb butter</strong><span></span><span
                 class="price">€27</span></li>
@@ -381,36 +389,50 @@
                 class="price">€25</span></li>
           </ul>
         </div>
-
-        <!-- SNACKS -->
-        <div class="wine-category">
-          <h3 class="t-snacks-title">Snacks</h3>
-          <ul class="wine-list">
-            <li><strong class="t-snack-bitterballen">Bitterballen</strong><span></span><span class="price">€7</span>
-            </li>
-            <li><strong class="t-snack-chicken">Crispy chicken</strong><span></span><span class="price">€7</span></li>
-            <li><strong class="t-snack-calamari">Calamari</strong><span></span><span class="price">€7</span></li>
-            <li><strong class="t-snack-mixed">Mixed snack platter</strong><span></span><span class="price">€22</span>
-            </li>
-          </ul>
-        </div>
-
       </div>
 
-      <!-- CAFE -->
+      <!-- WARME DRANKJES -->
       <div class="menu-content" id="cafe">
         <div class="wine-category">
-          <h3 class="t-hotdrinks-title">Hot Drinks</h3>
+          <h3 class="t-hotdrinks-title">Warme drankjes</h3>
           <ul class="wine-list">
-            <li><strong class="t-drink-coffee">Coffee</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-drink-coffee">Koffie (Deca)</strong><span></span><span class="price">€2.5</span></li>
             <li><strong class="t-drink-espresso">Espresso</strong><span></span><span class="price">€2.5</span></li>
             <li><strong class="t-drink-cappuccino">Cappuccino</strong><span></span><span class="price">€4</span></li>
             <li><strong class="t-drink-latte">Latte</strong><span></span><span class="price">€4</span></li>
-            <li><strong class="t-drink-chocolate">Hot chocolate</strong><span></span><span class="price">€3</span></li>
-            <li><strong class="t-drink-tea">Tea (selection)</strong><span></span><span class="price">€2.5</span></li>
+            <li><strong class="t-drink-chococcino">Chococcino</strong><span></span><span class="price">€4</span></li>
+            <li><strong class="t-drink-chocolate">Warme chocolademelk</strong><span></span><span class="price">€3</span>
+            </li>
+
+            <li>
+              <strong class="t-drink-tea">Thee</strong>
+              <span class="t-drink-tea-types">
+                (Rozenbottel, Citroen, Fruit, Munt, Kamille, Groene & La Vie en Rose)
+              </span>
+              <span class="price">€2.5</span>
+            </li>
+
+            <li><strong class="t-drink-irish-coffee">Irish koffie</strong><span></span><span class="price">€2.5</span>
+            </li>
+            <li><strong class="t-drink-french-coffee">French koffie</strong><span></span><span class="price">€2.5</span>
+            </li>
+            <li><strong class="t-drink-italian-coffee">Italian koffie</strong><span></span><span
+                class="price">€2.5</span>
+            </li>
+            <li><strong class="t-drink-chouffe-coffee">Chouffe koffie</strong><span></span><span
+                class="price">€2.5</span>
+            </li>
+            <li><strong class="t-drink-hasseltse-coffee">Hasseltse koffie</strong><span></span><span
+                class="price">€2.5</span></li>
+            <li><strong class="t-drink-diplomaten-coffee">Diplomaten koffie</strong><span></span><span
+                class="price">€2.5</span></li>
+            <li><strong class="t-drink-baileys-coffee">Baileys koffie</strong><span></span><span
+                class="price">€2.5</span>
+            </li>
           </ul>
         </div>
       </div>
+
 
       <!-- DESSERTS -->
       <div class="menu-content" id="dessert">
@@ -462,6 +484,8 @@
 
             <li><strong class="t-dessert-honeycake">Armenian honey cake (slice)</strong><span></span><span
                 class="price">€2.5</span></li>
+            <li><strong class="t-dessert-cacao">Armenian Cacao cake (slice)</strong><span></span><span
+                class="price">€2.5</span></li>
 
             <li><strong class="t-dessert-chips-salt">Chips (salt)</strong><span></span><span class="price">€2.5</span>
             </li>
@@ -473,57 +497,147 @@
 
 
       <!-- ALCOHOL -->
-      <!-- ALCOHOL -->
       <div class="menu-content" id="alcohol">
-
+        <!-- APERITIEVEN -->
         <div class="wine-category">
           <h3 class="t-aperitifs-title">Aperitifs</h3>
           <ul class="wine-list">
-            <li><strong class="t-alc-kirr">Kirr</strong><span></span><span class="price">€5</span></li>
-            <li><strong class="t-alc-kirr-royal">Kirr Royal</strong><span></span><span class="price">€6.5</span></li>
-            <li><strong class="t-alc-cava-glass">Cava (glass)</strong><span></span><span class="price">€6</span></li>
-            <li><strong class="t-alc-cava-bottle">Cava (bottle)</strong><span></span><span class="price">€26</span></li>
-            <li><strong class="t-alc-martini">Martini (white / red)</strong><span></span><span class="price">€5</span>
+            <li><strong class="t-alc-kirr">Kirr</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-kirr-royal">Kirr Royal</strong><span></span><span class="price">€6,5</span></li>
+            <li><strong class="t-alc-cava-glass">Cava (glass)</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-cava-bottle">Cava (bottle)</strong><span></span><span class="price">€26,0</span>
             </li>
+            <li><strong class="t-alc-martini">Martini (white / red)</strong><span></span><span class="price">€5,0</span>
+            </li>
+            <li><strong class="t-alc-porto-red">Porto rood</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-porto-white">Porto wit</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-pineau">Pineau des Charentes</strong><span></span><span class="price">€5,0</span>
+            </li>
+            <li><strong class="t-alc-sherry">Sherry</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-campari">Campari</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-pisang">Pisang Ambon</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-ricard">Ricard</strong><span></span><span class="price">€6,0</span></li>
           </ul>
         </div>
 
+        <!-- HUISWIJN -->
+        <div class="wine-category">
+          <h3 class="t-housewine-title">House wine</h3>
+          <ul class="wine-list">
+            <li><strong class="t-housewine-glass">Glass</strong><span></span><span class="price">€4,5</span></li>
+            <li><strong class="t-housewine-quarter">Quarter litre</strong><span></span><span class="price">€8,0</span>
+            </li>
+            <li><strong class="t-housewine-half">Half litre</strong><span></span><span class="price">€14,0</span></li>
+            <li><strong class="t-housewine-bottle">Bottle</strong><span></span><span class="price">€21,0</span></li>
+          </ul>
+        </div>
+
+        <!-- COCKTAILS -->
         <div class="wine-category">
           <h3 class="t-cocktails-title">Cocktails</h3>
           <ul class="wine-list">
-            <li><strong class="t-alc-mojito">Mojito</strong><span></span><span class="price">€9</span></li>
+            <li><strong class="t-alc-mojito">Mojito</strong><span></span><span class="price">€9,0</span></li>
             <li><strong class="t-alc-mojito-strawberry">Strawberry Mojito</strong><span></span><span
-                class="price">€11</span></li>
-            <li><strong class="t-alc-gin-tonic">Gin & Tonic</strong><span></span><span class="price">€9</span></li>
-            <li><strong class="t-alc-aperol">Aperol Spritz</strong><span></span><span class="price">€9</span></li>
+                class="price">€11,0</span></li>
+            <li><strong class="t-alc-gin-tonic">Gin & Tonic</strong><span></span><span class="price">€9,0</span></li>
+            <li><strong class="t-alc-aperol">Aperol Spritz</strong><span></span><span class="price">€9,0</span></li>
+
+            <li><strong class="t-alc-picon-wine">Picon / witte wijn</strong><span></span><span class="price">€9,5</span>
+            </li>
+            <li><strong class="t-alc-virgin-mojito">Virgin Mojito</strong><span></span><span class="price">€7,0</span>
+            </li>
+            <li><strong class="t-alc-virgin-mojito-strawberry">Virgin Mojito aardbei</strong><span></span><span
+                class="price">€9,0</span></li>
+            <li><strong class="t-alc-gin-tonic-0">Gin & Tonic 0% alc</strong><span></span><span
+                class="price">€9,0</span></li>
           </ul>
         </div>
 
+        <!-- BIEREN -->
         <div class="wine-category">
           <h3 class="t-beers-title">Beers</h3>
           <ul class="wine-list">
-            <li><strong class="t-alc-duvel">Duvel</strong><span></span><span class="price">€4.5</span></li>
-            <li><strong class="t-alc-westmalle">Westmalle Tripel</strong><span></span><span class="price">€5</span></li>
-            <li><strong class="t-alc-karmeliet">Tripel Karmeliet</strong><span></span><span class="price">€5</span></li>
-            <li><strong class="t-alc-hoegaarden">Hoegaarden White</strong><span></span><span class="price">€2.7</span>
+            <li><strong class="t-beer-cristal">Cristal</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-beer-grimbergen">Grimbergen Blond</strong><span></span><span class="price">€4,5</span>
             </li>
-            <li><strong class="t-alc-carlsberg0">Carlsberg 0%</strong><span></span><span class="price">€3</span></li>
+            <li><strong class="t-beer-kriek">Kriek Mort Subite</strong><span></span><span class="price">€3,5</span></li>
+            <li><strong class="t-beer-maes">Maes</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-beer-orval">Orval</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-beer-leffe">Leffe Blond</strong><span></span><span class="price">€4,5</span></li>
+            <li><strong class="t-beer-palm">Palm</strong><span></span><span class="price">€2,7</span></li>
+            <li><strong class="t-beer-westmalle-extra">Westmalle Extra</strong><span></span><span
+                class="price">€4,5</span></li>
+            <li><strong class="t-beer-erdinger">Erdinger Weissbier</strong><span></span><span class="price">€6,0</span>
+            </li>
+            <li><strong class="t-beer-carolus">Carolus Classic</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-beer-cornet">Cornet</strong><span></span><span class="price">€4,5</span></li>
+            <li><strong class="t-beer-geuze">Geuze Boon (37,5cl)</strong><span></span><span class="price">€6,0</span>
+            </li>
+            <li><strong class="t-beer-cornet-0">Cornet 0%</strong><span></span><span class="price">€4,5</span></li>
+            <li><strong class="t-beer-sportzot">Sport Zot 0,4%</strong><span></span><span class="price">€4,5</span></li>
+          </ul>
+        </div>
+
+        <!-- STERKE DRANK -->
+        <div class="wine-category">
+          <h3 class="t-spirits-title">Sterke drank</h3>
+          <ul class="wine-list">
+            <li><strong class="t-alc-captain">Captain Morgan</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-bacardi">Bacardi</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-vodka">Vodka</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-jb">J&amp;B</strong><span></span><span class="price">€5,0</span></li>
+            <li><strong class="t-alc-jackdaniels">Jack Daniel’s</strong><span></span><span class="price">€7,0</span>
+            </li>
+            <li><strong class="t-alc-jenever">Jenever</strong><span></span><span class="price">€3,5</span></li>
+            <li><strong class="t-alc-johnnie">Johnnie Walker Red Label</strong><span></span><span
+                class="price">€6,5</span></li>
+          </ul>
+        </div>
+
+        <!-- DIGESTIEVEN -->
+        <div class="wine-category">
+          <h3 class="t-digestifs-title">Digestieven</h3>
+          <ul class="wine-list">
+            <li><strong class="t-alc-cointreau">Cointreau</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-kruskovac">Kruskovac</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-grandmarnier">Grand Marnier</strong><span></span><span class="price">€6,0</span>
+            </li>
+            <li><strong class="t-alc-baileys">Baileys</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-amaretto">Amaretto</strong><span></span><span class="price">€6,0</span></li>
+            <li><strong class="t-alc-calvados">Calvados</strong><span></span><span class="price">€7,0</span></li>
+            <li><strong class="t-alc-cognac">Cognac</strong><span></span><span class="price">€7,0</span></li>
           </ul>
         </div>
 
         <div class="wine-category">
-          <h3 class="t-spirits-title">Spirits & Digestifs</h3>
+          <h3 class="t-nonalcoholic-title">Non-alcoholic drinks</h3>
           <ul class="wine-list">
-            <li><strong class="t-alc-baileys">Baileys</strong><span></span><span class="price">€6</span></li>
-            <li><strong class="t-alc-amaretto">Amaretto</strong><span></span><span class="price">€6</span></li>
-            <li><strong class="t-alc-grandmarnier">Grand Marnier</strong><span></span><span class="price">€6</span></li>
-            <li><strong class="t-alc-cognac">Cognac</strong><span></span><span class="price">€7</span></li>
-            <li><strong class="t-alc-jackdaniels">Jack Daniel’s</strong><span></span><span class="price">€7</span></li>
+
+            <li><strong class="t-soft-still-half">Still water 1/2L</strong><span></span><span class="price">€5,0</span>
+            </li>
+            <li><strong class="t-soft-still-glass">Still water (glass)</strong><span></span><span
+                class="price">€2,5</span></li>
+
+            <li><strong class="t-soft-sparkling-half">Sparkling water 1/2L</strong><span></span><span
+                class="price">€5,0</span></li>
+            <li><strong class="t-soft-sparkling-glass">Sparkling water (glass)</strong><span></span><span
+                class="price">€2,5</span></li>
+
+            <li><strong class="t-soft-pepsi">Pepsi</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-pepsi-max">Pepsi Max</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-mirinda">Mirinda</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-sevenup">Seven Up</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-lipton">Lipton Ice Tea</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-looza">Looza fruitsap</strong><span></span><span class="price">€2,5</span></li>
+            <li><strong class="t-soft-schweppes">Schweppes Tonic</strong><span></span><span class="price">€2,5</span>
+            </li>
+            <li><strong class="t-soft-naranja">Naranja</strong><span></span><span class="price">€2,5</span></li>
+
           </ul>
         </div>
 
-      </div>
 
+      </div>
     </div>
   </section>
 
@@ -541,56 +655,48 @@
 
         <div class="gallery-track">
           <div class="gallery-slide active">
-            <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=2070&q=80"
-              alt="Restaurant Interior">
+            <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Restaurant Interior">
             <div class="gallery-overlay">
               <span class="t-gallery1">Elegant Dining Room</span>
             </div>
           </div>
 
-          <div class="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=2070&q=80"
-              alt="Wine Collection">
-            <div class="gallery-overlay">
-              <span class="t-gallery2">Wine Cellar</span>
-            </div>
-          </div>
 
           <div class="gallery-slide">
             <img src="images/inside1.jpeg" alt="Chef Preparing Food">
             <div class="gallery-overlay">
-              <span class="t-gallery3">Chef's Kitchen</span>
+              <span class="t-gallery3">Our Café</span>
             </div>
           </div>
 
           <div class="gallery-slide">
             <img src="images/mixgrill.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
-              <span class="t-gallery4">Artisan Desserts</span>
+              <span class="t-gallery4">Mix Grill</span>
             </div>
           </div>
           <div class="gallery-slide">
             <img src="images/Scampi in tomaat(room)saus.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
-              <span class="t-gallery4">Artisan Desserts</span>
+              <span class="t-gallery4">Scampi in tomaat(room)saus</span>
             </div>
           </div>
           <div class="gallery-slide">
             <img src="images/Stoofvlees van varkenswangetjes.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
-              <span class="t-gallery4">Artisan Desserts</span>
+              <span class="t-gallery4">StoofVless</span>
             </div>
           </div>
           <div class="gallery-slide">
             <img src="images/Tagliata di manzo ±250 g.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
-              <span class="t-gallery4">Artisan Desserts</span>
+              <span class="t-gallery4"> Tagliata di manzo</span>
             </div>
           </div>
           <div class="gallery-slide">
             <img src="images/steak300g.jpeg" alt="Dessert Presentation">
             <div class="gallery-overlay">
-              <span class="t-gallery4">Artisan Desserts</span>
+              <span class="t-gallery4">STEAK 300g</span>
             </div>
           </div>
         </div>
@@ -658,7 +764,7 @@
                 </a>
               </p>
               <p class="opening-hours">
-                <small>Telefonisch bereikbaar: Ma-Zo, 12:00 - 22:00</small>
+                <small>Telefonisch bereikbaar: Ma-Zo, 11:00 - 22:00</small>
               </p>
             </div>
           </div>
@@ -666,7 +772,6 @@
 
       </div>
 
-      <!-- Reservation Tips -->
       <!-- Reservation Tips -->
       <div class="reservation-tips">
         <p class="tip">
@@ -726,7 +831,6 @@
               <strong class="t-contact-hours-label">Hours</strong>
               <p class="t-contact-hours">
                 Monday – Sunday: 11am – 22pm<br>
-                Weekend Brunch: 11am – 1pm
               </p>
             </div>
           </div>
@@ -752,7 +856,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 class="t-footer-logo">LIHANA Eetcafé</h3>
+          <h3 class="t-footer-logo">Eetcafé LIHANA</h3>
           <p class="t-footer-desc">
             Belgian culture meets modern refinement in the heart of Merchtem.
           </p>
@@ -773,7 +877,6 @@
           <ul>
             <li><a href="#" class="t-footer-instagram">Instagram</a></li>
             <li><a href="#" class="t-footer-facebook">Facebook</a></li>
-            <li><a href="#" class="t-footer-twitter">Twitter</a></li>
           </ul>
         </div>
 
@@ -793,7 +896,7 @@
 
       <div class="footer-bottom">
         <p class="t-footer-copyright">
-          © 2024 LIHANA Eetcafé — All rights reserved. Crafted with passion in London.
+          © 2026 LIHANA Eetcafé — All rights reserved. Crafted with passion in Merchtem.
         </p>
       </div>
     </div>
