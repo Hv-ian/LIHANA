@@ -712,7 +712,7 @@ function initLanguageSystem() {
       't-contact-phone-label': 'Téléphone',
       't-contact-email-label': 'Email',
       't-contact-hours-label': 'Horaires',
-      't-contact-hours': 'Lundi – dimanche : 11h – 22h<br>Brunch week-end : 11h – 13h',
+      't-contact-hours': 'Lundi – dimanche : 11:00 – 22:00',
       't-contact-navigate': 'Itinéraire',
 
       // Booking
@@ -955,7 +955,7 @@ function initLanguageSystem() {
       't-contact-phone-label': 'Telefoon',
       't-contact-email-label': 'E-mail',
       't-contact-hours-label': 'Openingsuren',
-      't-contact-hours': 'Maandag – zondag: 11u – 22u<br>Weekendbrunch: 11u – 13u',
+      't-contact-hours': 'Maandag – zondag: 11:00 – 22:00',
       't-contact-navigate': 'Navigeren',
 
       // Booking
