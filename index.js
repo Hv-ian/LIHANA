@@ -708,7 +708,7 @@ function initLanguageSystem() {
 
       't-contact-title': 'Nous rendre visite',
       't-contact-address-label': 'Adresse',
-      't-contact-address': 'Bogaerdstraat 7, 1785 Merchtem<br>Belgique',
+      't-contact-address': 'Bogaerdstraat 7, 1785 Merchtem, Belgique',
       't-contact-phone-label': 'Téléphone',
       't-contact-email-label': 'Email',
       't-contact-hours-label': 'Horaires',
@@ -951,7 +951,7 @@ function initLanguageSystem() {
       // Contact
       't-contact-title': 'Bezoek ons',
       't-contact-address-label': 'Adres',
-      't-contact-address': 'Bogaerdstraat 7, 1785 Merchtem<br>België',
+      't-contact-address': 'Bogaerdstraat 7, 1785 Merchtem, België',
       't-contact-phone-label': 'Telefoon',
       't-contact-email-label': 'E-mail',
       't-contact-hours-label': 'Openingsuren',
