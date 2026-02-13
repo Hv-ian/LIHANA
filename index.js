@@ -296,16 +296,17 @@ function initLanguageSystem() {
       // Starters
       't-starter-cheese': 'Cheese croquette 1/2/3',
       't-starter-shrimp': 'Shrimp croquette 1/2/3',
-      't-starter-scampi': 'Scampi garlic (5)',
-      't-starter-scampi-tomaat': 'Scampi tomato (5)',
-      't-starter-scampi-diabolo': 'Scampi diabolo (5)',
+      't-starter-scampi': 'Scampi garlic(room) (5)',
+      't-starter-scampi-tomaat': 'Scampi tomato(room) (5)',
+      't-starter-scampi-diabolo': 'Scampi diabolo(room) (5)',
       't-starter-duo': 'Duo cheese & shrimp',
       't-starter-friet': 'Friet (Belgian fries)',
-      't-starters-bitterballen': 'Portion Bitterballen',
-      't-starters-calamares': 'Portion Calamares',
-      't-starters-crispy-chicken': 'Portion Crispy Chicken',
-      't-starters-loempias': 'Portion Mini Loempia’s',
+      't-starters-bitterballen': 'Portion bitterballen',
+      't-starters-calamares': 'Portion calamares',
+      't-starters-crispy-chicken': 'Portion crispy chicken',
+      't-starters-loempias': 'Portion mini loempia’s',
       't-starters-hapjes': 'Hapjes',
+      't-starters-mix': 'Portion mix',
 
       // Main dishes
       't-main-steak300-title': 'Steak ±300 g',
@@ -329,12 +330,12 @@ function initLanguageSystem() {
       't-main-volauvent-desc': 'Classic Belgian vol-au-vent filled with chicken, mushrooms, and a creamy sauce, served with fries',
       't -main-trout-title': 'Trout filet with herb butter',
       't-main-trout-desc': 'Fresh trout filet pan-seared and topped with a fragrant herb butter, served with seasonal vegetables and fries',
-      't-main-scampi-look-title': 'Scampi in garlic sauce', 
-      't-main-scampi-look-desc': '(10 pcs) Scampi sautéed in a flavorful garlic sauce, served with crusty bread for dipping',
-      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-look-title': 'Scampi in garlic sauce (10 pcs)', 
+      't-main-scampi-look-desc': '(10 pcs) Scampi sautéed in a flavorful garlic sauce.',
+      't-main-scampi-diabolo-title': 'Scampi in diabolo sauce (10 pcs)',
       't-main-scampi-diabolo-desc': '(10 pcs) Scampi cooked in a spicy diabolo sauce, served with fries to balance the heat',
-      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
-      't-main-paardebiefstuk-desc': 'Grilled horse steak, served with fries and sauce of choice: (mushroom, pepper, béarnaise, provençale)',
+      't-main-paardensteak-title': 'Horse steak ±300 g',
+      't-main-paardensteak-desc': 'Grilled horse steak, served with fries and sauce of choice: (mushroom, pepper, béarnaise, provençale)',
       't-main-breaded-fish-title': 'Breaded fish filet',
       't-main-breaded-fish-desc': 'Crispy breaded fish filet served with fries and tartar sauce',
       't-kids-menu-title': 'Kids menu',
@@ -343,15 +344,16 @@ function initLanguageSystem() {
       't-kids-curryworst': '2 Curry sausages',
 
       // Snacks
-      't-snack-bitterballen': 'Bitterballen',
-      't-snack-chicken': 'Crispy chicken',
-      't-snack-calamari': 'Calamari',
-      't-snack-mixed': 'Mixed snack platter',
+      't-snack-bitterballen': 'bitterballen',
+      't-snack-chicken': 'crispy chicken',
+      't-snack-calamari': 'calamari',
+      't-snack-mixed': 'mixed snack platter',
 
       // Hot drinks
       't-hotdrinks-title': 'Hot drinks',
 
-      't-drink-coffee': 'Coffee/Decaf',
+      't-drink-coffee': 'Coffee',
+      't-drink-deca': 'Deca',
       't-drink-espresso': 'Espresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -399,10 +401,11 @@ function initLanguageSystem() {
       't-alc-kirr-royal': 'Kirr Royal',
       't-alc-cava-glass': 'Cava (glass)',
       't-alc-cava-bottle': 'Cava (bottle)',
-      't-alc-martini': 'Martini (white / red)',
+      't-alc-martini-wit': 'Martini white',
+      't-alc-martini-rood': 'Martini red',
       't-alc-porto-red': 'Red port',
       't-alc-porto-white': 'White port',
-      't-alc-pineau': 'Pineau des Charentes',
+      't-alc-pineau': 'Pineau de charentes',
       't-alc-sherry': 'Sherry',
       't-alc-campari': 'Campari',
       't-alc-pisang': 'Pisang Ambon',
@@ -432,7 +435,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blond',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
-      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden White',
+      't-beer-westmalle-Hoegarden': 'Hoegarden White',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -476,9 +479,14 @@ function initLanguageSystem() {
       't-soft-naranja': 'Naranja',
 
 
-
       't-gallery-title': 'Gallery',
       't-gallery-subtitle': 'Step into our world of culinary excellence',
+      't-gallery1': 'Scampi in tomato cream sauce',
+      't-gallery3': 'Our Café',
+      't-gallery4': 'Mix Grill',
+      't-gallery5': 'Stew with pork cheeks',
+      't-gallery6':'tagliata di manzo',
+      't-gallery7': 'Steak 300g',
 
 
       // Contact
@@ -567,16 +575,17 @@ function initLanguageSystem() {
 
       't-starter-cheese': 'Croquette au fromage 1/2/3',
       't-starter-shrimp': 'Croquette aux crevettes 1/2/3',
-      't-starter-scampi': 'Scampis à l’ail (5)',
-      't-starter-scampi-tomaat': 'Scampi tomaat (5)',
-      't-starter-scampi-diabolo': 'Scampi diabolo (5)',
+      't-starter-scampi': 'Scampis à l’ail(room) (5)',
+      't-starter-scampi-tomaat': 'Scampi tomaat(room) (5)',
+      't-starter-scampi-diabolo': 'Scampi diabolo(room) (5)',
       't-starter-duo': 'Duo de fromage & crevettes',
       't-starter-friet': 'Friet (frites belges)',
-      't-starters-bitterballen': 'Partie Bitterballen ',
-      't-starters-calamares': 'Partie Calamares',
-      't-starters-crispy-chicken': 'Partie Crispy Chicken',
-      't-starters-loempias': 'Partie Mini Loempia’s',
+      't-starters-bitterballen': 'Partie itterballen ',
+      't-starters-calamares': 'Partie calamares',
+      't-starters-crispy-chicken': 'Partie crispy chicken',
+      't-starters-loempias': 'Partie mini loempia’s',
       't-starters-hapjes': 'Hapjes',
+      't-starters-mix': 'Partie mixte',
 
       't-main-steak300-title': 'Steak ±300 g',
       't-main-steak300-desc':
@@ -599,16 +608,17 @@ function initLanguageSystem() {
       't-main-chicken-brochette-desc': 'Demi ou portion complète de notre délicieuse brochette de poulet, servie avec frites et sauce au choix',
       't-main-volauvent-title': 'Vol-au-vent',
       't-main-volauvent-desc': 'Vol-au-vent belge classique rempli de poulet, champignons et une sauce crémeuse, servi avec des frites',
-      't -main-trout-title': 'Filet de truite au beurre aux herbes',
+      't-main-trout-title': 'Filet de truite au beurre aux herbes',
       't-main-trout-desc': 'Filet de truite frais poêlé et garni d’un beurre aux herbes parfumé, servi avec des légumes de saison et des frites',
-      't-main-scampi-look-title': 'Scampi à l’ail',
-      't-main-scampi-look-desc': '(10 pcs) Scampis sautés dans une savoureuse sauce à l’ail, servis avec du pain croustillant pour tremper',
-      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-look-title': 'Scampi à l’ail (10 pcs)',
+      't-main-scampi-look-desc': '(10 pcs) Scampis sautés dans une savoureuse sauce à l’ail.',
+      't-main-scampi-diabolo-title': 'Scampi diabolo (10 pcs)',
       't-main-scampi-diabolo-desc': '(10 pcs) Scampis cuits dans une sauce diabolo épicée, servis avec des frites pour équilibrer le piquant',
-      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
-      't-main-paardebiefstuk-desc': 'Steak de cheval grillé, servi avec frites et sauce au choix: (champignon, poivre, béarnaise, provençale)',
+      't-main-paardensteak-title': 'Steak de Cheval ±300 g',
+      't-main-paardensteak-desc': 'Steak de cheval grillé, servi avec frites et sauce au choix: (champignon, poivre, béarnaise, provençale)',
       't-main-breaded-fish-title': 'Filet de poisson pané',
       't-main-breaded-fish-desc': 'Filet de poisson croustillant servi avec frites et sauce tartare',
+      't-kids-title': 'Menu enfants',
       't-kids-menu-title': 'Menu enfant',
       't-kids-volauvent': 'Vol-au-vent',
       't-kids-stoofvlees': 'Ragoût de porc',
@@ -618,7 +628,8 @@ function initLanguageSystem() {
       // Boissons chaudes
       't-hotdrinks-title': 'Boissons chaudes',
 
-      't-drink-coffee': 'Café/Décaféiné',
+      't-drink-coffee': 'Café',
+      't-drink-deca': 'Décaféiné',
       't-drink-espresso': 'Expresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -667,10 +678,11 @@ function initLanguageSystem() {
       't-alc-kirr-royal': 'Kirr Royal',
       't-alc-cava-glass': 'Cava (verre)',
       't-alc-cava-bottle': 'Cava (bouteille)',
-      't-alc-martini': 'Martini (blanc / rouge)',
+      't-alc-martini-wit': 'Martini blanc',
+      't-alc-martini-rood': 'Martini rouge',
       't-alc-porto-red': 'Porto rouge',
       't-alc-porto-white': 'Porto blanc',
-      't-alc-pineau': 'Pineau des Charentes',
+      't-alc-pineau': 'Pinot de charentes',
       't-alc-sherry': 'Xérès',
       't-alc-campari': 'Campari',
       't-alc-pisang': 'Pisang Ambon',
@@ -700,7 +712,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blonde',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
-      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden Blanc',
+      't-beer-westmalle-Hoegarden': 'Hoegarden Blanc',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -746,6 +758,12 @@ function initLanguageSystem() {
       //Galerie
       't-gallery-title': 'Galerie',
       't-gallery-subtitle': 'Entrez dans notre univers d’excellence culinaire',
+      't-gallery1': 'Scampi à la sauce tomate et crème',
+      't-gallery3': 'Notre Café',
+      't-gallery4': 'Mix Grill',
+      't-gallery5': 'Ragoût de joues de porc',
+      't-gallery6':'tagliata di manzo',
+      't-gallery7': 'Steak 300g',
 
       't-contact-title': 'Nous rendre visite',
       't-contact-address-label': 'Adresse',
@@ -753,7 +771,8 @@ function initLanguageSystem() {
       't-contact-phone-label': 'Téléphone',
       't-contact-email-label': 'Email',
       't-contact-hours-label': 'Horaires',
-      't-contact-hours': 'Lundi, mardi, jeudi – dimanche : 11h00 – 22h00, Mercredi : 08h00 – 22h00',
+      't-contact-hours': 'Lundi, mardi, jeudi – dimanche : 11h00 22h00',
+      't-contact-hours-wednesday': 'Mercredi : 08h00 – 22h00',
       't-contact-navigate': 'Itinéraire',
 
       // Booking
@@ -803,7 +822,7 @@ function initLanguageSystem() {
 
       't-hero-sub': 'Belgisch restaurant • Ambachtelijk café',
       't-reserve-btn': 'Reserveer een tafel',
-      't-view-menus': "Bekijk menu's",
+      't-view-menus': "Bekijk Menu",
 
       't-about-title': 'Belgisch diner met moderne verfijning',
       't-about-text':
@@ -833,23 +852,24 @@ function initLanguageSystem() {
 
       't-starter-cheese': 'Kaaskroket 1/2/3',
       't-starter-shrimp': 'Garnaalkroket 1/2/3',
-      't-starter-scampi': 'Scampi look (5)',
-      't-starter-scampi-tomaat': 'Scampi tomaat (5)',
-      't-starter-scampi-diabolo': 'Scampi diabolo (5)',
+      't-starter-scampi': 'Scampi look(room) (5)',
+      't-starter-scampi-tomaat': 'Scampi tomaat(room) (5)',
+      't-starter-scampi-diabolo': 'Scampi diabolo(room) (5)',
       't-starter-friet': 'Friet (Belgische frieten)',
-      't-starters-bitterballen': 'Portie Bitterballen',
-      't-starters-calamares': 'Portie Calamares',
-      't-starters-crispy-chicken': 'Portie Crispy Chicken',
-      't-starters-loempias': 'Portie Mini Loempia’s',
+      't-starters-bitterballen': 'Portie bitterballen',
+      't-starters-calamares': 'Portie calamares',
+      't-starters-crispy-chicken': 'Portie crispy chicken',
+      't-starters-loempias': 'Portie mini Loempia’s',
       't-starters-hapjes': 'Hapjes',
+      't-starters-mix':'Portie mix',
 
       't-main-steak300-title': 'Steak ±300 g',
       't-main-steak300-desc':
-        'Gegrilde rundssteak, geserveerd met frieten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
+        'Gegrilde rundssteak, geserveerd met frieten/kroketten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
 
       't-main-steak180-title': 'Steak ±180 g',
       't-main-steak180-desc':
-        'Kleinere rundssteak, geserveerd met kroketten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
+        'Kleinere rundssteak, geserveerd met frieten/kroketten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
 
       't-main-volauvent': 'Vol-au-vent',
       't-main-trout': 'Forelfilet met kruidenboter',
@@ -858,7 +878,7 @@ function initLanguageSystem() {
       't-main-tagliata-desc': 'Gesneden rundssteak met rucola, Parmezaan en olijfolie',
       't-main-stoofvlees-title': 'Stoofvlees van varkenswangetjes',
       't-main-stoofvlees-desc': 'Langzaam gegaarde varkenswangen in een rijke Belgische jus',
-      't-main-scampi-tomaat-title': 'Scampi in tomatenroomsaus',
+      't-main-scampi-tomaat-title': 'Scampi tomaat(room) saus (10 stuks)',
       't-main-scampi-tomaat-desc': '(10 stuks) Scampi geserveerd in een tomaten- en roomsaus',
       't-main-chicken-brochette-title': 'Kipbrochette 1/2',
       't-main-chicken-brochette-desc': 'Halve of hele portie van onze heerlijke kipbrochette, geserveerd met frieten en saus naar keuze',
@@ -866,24 +886,26 @@ function initLanguageSystem() {
       't-main-volauvent-desc': 'Klassieke Belgische vol-au-vent gevuld met kip, champignons en een romige saus, geserveerd met frieten',
       't -main-trout-title': 'Forelfilet met kruidenboter',
       't-main-trout-desc': 'Vers gebakken forelfilet gegarneerd met een aromatische kruidenboter, geserveerd met seizoensgroenten en frieten',
-      't-main-scampi-look-title': 'Scampi look',
-      't-main-scampi-look-desc': '(10 stuks) Scampi gebakken in een smaakvolle looksaus, geserveerd met knapperig brood om in te dippen',
-      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-look-title': 'Scampi look(room) saus (10 stuks)',
+      't-main-scampi-look-desc': '(10 stuks) Scampi gebakken in een smaakvolle looksaus.',
+      't-main-scampi-diabolo-title': 'Scampi diabolo(room) saus (10 stuks)',
       't-main-scampi-diabolo-desc': '(10 stuks) scampi gekookt in een pittige diabolo saus, geserveerd met frieten om de pittigheid te balanceren',
-      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
-      't-main-paardebiefstuk-desc': 'Gegrilde paardebiefstuk, geserveerd met frieten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
-      't-main-breaded-fish-title': 'Filet van gepaneerde vis',
+      't-main-paardensteak-title': 'Paardensteak ±300 g',
+      't-main-paardensteak-desc': 'Gegrilde paardensteak, geserveerd met frieten/kroketten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
+      't-main-breaded-fish-title': 'Gepaneerde vis',
       't-main-breaded-fish-desc': 'Knapperige visfilet geserveerd met frieten en tartaarsaus',
+      't-kids-title': 'Kindermenu',
       't-kids-menu-title': 'Kindermenu',
       't-kids-volauvent': 'Vol-au-vent (kindergerecht)',
       't-kids-stoofvlees': 'Stoofvlees (kindergerecht)',
-      't-kids-curryworst': '2 Curryworsten',
-      't-starter-duo': 'Duo van kaas & garnalen',
+      't-kids-curryworst': '2 curryworsten',
+      't-starter-duo': 'Duo kaas & garnalen',
 
       // Warme drankjes
       't-hotdrinks-title': 'Warme drankjes',
 
-      't-drink-coffee': 'Koffie/Deca',
+      't-drink-coffee': 'Koffie',
+      't-drink-deca': 'Deca',
       't-drink-espresso': 'Espresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -930,10 +952,11 @@ function initLanguageSystem() {
       't-alc-kirr-royal': 'Kirr Royal',
       't-alc-cava-glass': 'Cava (glas)',
       't-alc-cava-bottle': 'Cava (fles)',
-      't-alc-martini': 'Martini (wit / rood)',
+      't-alc-martini-wit': 'Martini wit',
+      't-alc-martini-rood': 'Martini rood',
       't-alc-porto-red': 'Porto rood',
       't-alc-porto-white': 'Porto wit',
-      't-alc-pineau': 'Pineau des Charentes',
+      't-alc-pineau': 'Pinot de charentes',
       't-alc-sherry': 'Sherry',
       't-alc-campari': 'Campari',
       't-alc-pisang': 'Pisang Ambon',
@@ -942,7 +965,7 @@ function initLanguageSystem() {
       't-housewine-title': 'Huiswijn',
       't-housewine-glass': 'Glas',
       't-housewine-quarter': 'Kwartje',
-      't-housewine-half': 'Halve liter',
+      't-housewine-half': '1/2 L',
       't-housewine-bottle': 'Fles',
 
       't-alc-mojito': 'Mojito',
@@ -963,7 +986,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blond',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
-      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden Wit',
+      't-beer-westmalle-Hoegarden': 'Hoegarden Wit',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -1010,6 +1033,12 @@ function initLanguageSystem() {
 
       't-gallery-title': 'Galerij',
       't-gallery-subtitle': 'Stap binnen in onze wereld van culinaire verfijning',
+      't-gallery1': 'Scampi in tomaat(room)saus',
+      't-gallery3': 'Ons café',
+      't-gallery4': 'Mix Grill',
+      't-gallery5': 'Stoofvlees van varkenswangetjes',
+      't-gallery6':'tagliata di manzo',
+      't-gallery7': 'Steak 300g',
 
       // Contact
       't-contact-title': 'Bezoek ons',
@@ -1018,7 +1047,8 @@ function initLanguageSystem() {
       't-contact-phone-label': 'Telefoon',
       't-contact-email-label': 'E-mail',
       't-contact-hours-label': 'Openingsuren',
-      't-contact-hours': 'Maandag, dinsdag, donderdag – zondag: 11:00 – 22:00, Woensdag: 08:00 – 22:00',
+      't-contact-hours': 'Maandag, dinsdag, donderdag zondag: 11:00 – 22:00',
+      't-contact-hours-wednesday': 'Woensdag: 08:00 – 22:00',
       't-contact-navigate': 'Navigeren',
 
       // Booking
@@ -1040,7 +1070,7 @@ function initLanguageSystem() {
         'Belgische cultuur ontmoet moderne verfijning in het hart van Merchtem.',
       't-footer-links': 'Snelle links',
       't-footer-home': 'Home',
-      't-footer-menus': "Menu's",
+      't-footer-menus': "Menu",
       't-footer-gallery': 'Galerij',
       't-footer-reservations': 'Reserveren',
       't-footer-connect': 'Volg ons',
@@ -1144,7 +1174,6 @@ function initGalleryCarousel() {
     showSlide(current);
   });
 }
-
 /* ---------------------
    ENHANCED NAVIGATION MODAL
 --------------------- */
@@ -1237,6 +1266,8 @@ function initLazyLoading() {
   images.forEach(img => imageObserver.observe(img));
 }
 
+/* Note: CSS for floating menu tabs has been moved to styles.css */
+
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM loaded - initializing functions');
 
@@ -1276,3 +1307,5 @@ if (burger && navMenu) {
     });
   });
 }
+
+
