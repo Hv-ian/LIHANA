@@ -255,7 +255,7 @@ function initLanguageSystem() {
       // Navigation
       't-home': 'Home',
       't-about': 'About',
-      't-menus': 'Menus',
+      't-menus': 'Menu',
       't-gallery': 'Gallery',
       't-book': 'Book',
       't-logo': 'EETCAFÉ LIHANA',
@@ -301,20 +301,18 @@ function initLanguageSystem() {
       't-starter-scampi-diabolo': 'Scampi diabolo (5)',
       't-starter-duo': 'Duo cheese & shrimp',
       't-starter-friet': 'Friet (Belgian fries)',
-      't-starters-bitterballen': 'Bitterballen',
-      't-starters-calamares': 'Calamares',
-      't-starters-crispy-chicken': 'Crispy Chicken',
-      't-starters-loempias': 'Mini Loempia’s',
+      't-starters-bitterballen': 'Portion Bitterballen',
+      't-starters-calamares': 'Portion Calamares',
+      't-starters-crispy-chicken': 'Portion Crispy Chicken',
+      't-starters-loempias': 'Portion Mini Loempia’s',
       't-starters-hapjes': 'Hapjes',
 
       // Main dishes
       't-main-steak300-title': 'Steak ±300 g',
-      't-main-steak300-desc':
-        'Grilled beef steak, served with chips and sauce of choice',
+      't-main-steak300-desc':'Grilled beef steak, served with Fries, croquettes and sauce of choice: (mushroom, pepper, béarnaise, provençale)',
 
       't-main-steak180-title': 'Steak ±180 g',
-      't-main-steak180-desc':
-        'Smaller cut of beef steak, served with croquettes and sauce of choice',
+      't-main-steak180-desc':'Smaller cut of beef steak, served with Fries, crueqettes and sauce of choice: (mushroom, pepper, béarnaise, provençale)',
 
       't-main-volauvent': 'Vol-au-vent',
       't-main-trout': 'Trout filet with herb butter',
@@ -323,9 +321,26 @@ function initLanguageSystem() {
       't-main-tagliata-desc': 'Sliced beef steak with rocket, Parmesan and olive oil',
       't-main-stoofvlees-title': 'Pork cheek stew',
       't-main-stoofvlees-desc': 'Slow-cooked pork cheeks in a rich Belgian-style gravy',
-      't-main-scampi-tomaat-title': 'Scampi in tomato cream sauce',
-      't-main-scampi-tomaat-desc': 'Ten scampi served in a tomato and cream sauce',
-
+      't-main-scampi-tomaat-title': 'pcs Scampi in tomato cream sauce',
+      't-main-scampi-tomaat-desc': '(10 pcs) scampi served in a tomato and cream sauce',
+      't-main-chicken-brochette-title': 'Chicken brochette 1/2',
+      't-main-chicken-brochette-desc': 'Half or full portion of our delicious chicken brochette, served with fries and sauce of choice',
+      't-main-volauvent-title': 'Vol-au-vent',
+      't-main-volauvent-desc': 'Classic Belgian vol-au-vent filled with chicken, mushrooms, and a creamy sauce, served with fries',
+      't -main-trout-title': 'Trout filet with herb butter',
+      't-main-trout-desc': 'Fresh trout filet pan-seared and topped with a fragrant herb butter, served with seasonal vegetables and fries',
+      't-main-scampi-look-title': 'Scampi in garlic sauce', 
+      't-main-scampi-look-desc': '(10 pcs) Scampi sautéed in a flavorful garlic sauce, served with crusty bread for dipping',
+      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-diabolo-desc': '(10 pcs) Scampi cooked in a spicy diabolo sauce, served with fries to balance the heat',
+      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
+      't-main-paardebiefstuk-desc': 'Grilled horse steak, served with fries and sauce of choice: (mushroom, pepper, béarnaise, provençale)',
+      't-main-breaded-fish-title': 'Breaded fish filet',
+      't-main-breaded-fish-desc': 'Crispy breaded fish filet served with fries and tartar sauce',
+      't-kids-menu-title': 'Kids menu',
+      't-kids-volauvent': 'Vol-au-vent',
+      't-kids-stoofvlees': 'Pork stew',
+      't-kids-curryworst': '2 Curry sausages',
 
       // Snacks
       't-snack-bitterballen': 'Bitterballen',
@@ -336,7 +351,7 @@ function initLanguageSystem() {
       // Hot drinks
       't-hotdrinks-title': 'Hot drinks',
 
-      't-drink-coffee': 'Coffee',
+      't-drink-coffee': 'Coffee/Decaf',
       't-drink-espresso': 'Espresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -417,6 +432,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blond',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
+      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden White',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -514,7 +530,7 @@ function initLanguageSystem() {
     fr: {
       't-home': 'Accueil',
       't-about': 'À propos',
-      't-menus': 'Menus',
+      't-menus': 'Menu',
       't-gallery': 'Galerie',
       't-book': 'Réserver',
       't-logo': 'EETCAFÉ LIHANA',
@@ -556,19 +572,19 @@ function initLanguageSystem() {
       't-starter-scampi-diabolo': 'Scampi diabolo (5)',
       't-starter-duo': 'Duo de fromage & crevettes',
       't-starter-friet': 'Friet (frites belges)',
-      't-starters-bitterballen': 'Bitterballen',
-      't-starters-calamares': 'Calamares',
-      't-starters-crispy-chicken': 'Crispy Chicken',
-      't-starters-loempias': 'Mini Loempia’s',
+      't-starters-bitterballen': 'Partie Bitterballen ',
+      't-starters-calamares': 'Partie Calamares',
+      't-starters-crispy-chicken': 'Partie Crispy Chicken',
+      't-starters-loempias': 'Partie Mini Loempia’s',
       't-starters-hapjes': 'Hapjes',
 
       't-main-steak300-title': 'Steak ±300 g',
       't-main-steak300-desc':
-        'Steak de bœuf grillé, servi avec frites et sauce au choix',
+        'Steak de bœuf grillé, servi avec frites et sauce au choix: (champignon, poivre, béarnaise, provençale)',
 
       't-main-steak180-title': 'Steak ±180 g',
       't-main-steak180-desc':
-        'Plus petite pièce de bœuf, servie avec croquettes et sauce au choix',
+        'Plus petite pièce de bœuf, servie avec croquettes et sauce au choix: (champignon, poivre, béarnaise, provençale)',
 
       't-main-volauvent': 'Vol-au-vent',
       't-main-trout': 'Filet de truite au beurre aux herbes',
@@ -578,12 +594,31 @@ function initLanguageSystem() {
       't-main-stoofvlees-title': 'Ragoût de joues de porc',
       't-main-stoofvlees-desc': 'Joues de porc mijotées dans une riche sauce à la belge',
       't-main-scampi-tomaat-title': 'Scampi à la sauce tomate et crème',
-      't-main-scampi-tomaat-desc': 'Dix scampis servis dans une sauce tomate et crème',
+      't-main-scampi-tomaat-desc': '(10 pcs) Scampis servis dans une sauce tomate et crème',
+      't-main-chicken-brochette-title': 'Brochette de poulet 1/2',
+      't-main-chicken-brochette-desc': 'Demi ou portion complète de notre délicieuse brochette de poulet, servie avec frites et sauce au choix',
+      't-main-volauvent-title': 'Vol-au-vent',
+      't-main-volauvent-desc': 'Vol-au-vent belge classique rempli de poulet, champignons et une sauce crémeuse, servi avec des frites',
+      't -main-trout-title': 'Filet de truite au beurre aux herbes',
+      't-main-trout-desc': 'Filet de truite frais poêlé et garni d’un beurre aux herbes parfumé, servi avec des légumes de saison et des frites',
+      't-main-scampi-look-title': 'Scampi à l’ail',
+      't-main-scampi-look-desc': '(10 pcs) Scampis sautés dans une savoureuse sauce à l’ail, servis avec du pain croustillant pour tremper',
+      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-diabolo-desc': '(10 pcs) Scampis cuits dans une sauce diabolo épicée, servis avec des frites pour équilibrer le piquant',
+      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
+      't-main-paardebiefstuk-desc': 'Steak de cheval grillé, servi avec frites et sauce au choix: (champignon, poivre, béarnaise, provençale)',
+      't-main-breaded-fish-title': 'Filet de poisson pané',
+      't-main-breaded-fish-desc': 'Filet de poisson croustillant servi avec frites et sauce tartare',
+      't-kids-menu-title': 'Menu enfant',
+      't-kids-volauvent': 'Vol-au-vent',
+      't-kids-stoofvlees': 'Ragoût de porc',
+      't-kids-curryworst': '2 Curry saucisses',
+
 
       // Boissons chaudes
       't-hotdrinks-title': 'Boissons chaudes',
 
-      't-drink-coffee': 'Café',
+      't-drink-coffee': 'Café/Décaféiné',
       't-drink-espresso': 'Expresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -665,6 +700,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blonde',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
+      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden Blanc',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -760,7 +796,7 @@ function initLanguageSystem() {
     nl: {
       't-home': 'Home',
       't-about': 'Over ons',
-      't-menus': "Menu's",
+      't-menus': "Menu",
       't-gallery': 'Galerij',
       't-book': 'Reserveren',
       't-logo': 'EETCAFÉ LIHANA',
@@ -793,7 +829,7 @@ function initLanguageSystem() {
       't-cocktails-title': 'Cocktails',
       't-beers-title': 'Bieren',
       't-spirits-title': 'Sterke dranken',
-      't-main-chicken-brochette': 'Kipbrochette 1/2',
+      't-main-chicken-brochette': 'Kipbrochette (1/2)',
 
       't-starter-cheese': 'Kaaskroket 1/2/3',
       't-starter-shrimp': 'Garnaalkroket 1/2/3',
@@ -801,34 +837,53 @@ function initLanguageSystem() {
       't-starter-scampi-tomaat': 'Scampi tomaat (5)',
       't-starter-scampi-diabolo': 'Scampi diabolo (5)',
       't-starter-friet': 'Friet (Belgische frieten)',
-      't-starters-bitterballen': 'Bitterballen',
-      't-starters-calamares': 'Calamares',
-      't-starters-crispy-chicken': 'Crispy Chicken',
-      't-starters-loempias': 'Mini Loempia’s',
+      't-starters-bitterballen': 'Portie Bitterballen',
+      't-starters-calamares': 'Portie Calamares',
+      't-starters-crispy-chicken': 'Portie Crispy Chicken',
+      't-starters-loempias': 'Portie Mini Loempia’s',
       't-starters-hapjes': 'Hapjes',
 
       't-main-steak300-title': 'Steak ±300 g',
       't-main-steak300-desc':
-        'Gegrilde rundssteak, geserveerd met frieten en saus naar keuze',
+        'Gegrilde rundssteak, geserveerd met frieten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
 
       't-main-steak180-title': 'Steak ±180 g',
       't-main-steak180-desc':
-        'Kleinere rundssteak, geserveerd met kroketten en saus naar keuze',
+        'Kleinere rundssteak, geserveerd met kroketten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
 
       't-main-volauvent': 'Vol-au-vent',
       't-main-trout': 'Forelfilet met kruidenboter',
       't-main-tagliatelle': 'Tagliatelle met scampi',
       't-main-tagliata-title': 'Tagliata di manzo ±250 g',
       't-main-tagliata-desc': 'Gesneden rundssteak met rucola, Parmezaan en olijfolie',
-      't-main-stoofvlees-title': 'Varkenswangstoofpot',
+      't-main-stoofvlees-title': 'Stoofvlees van varkenswangetjes',
       't-main-stoofvlees-desc': 'Langzaam gegaarde varkenswangen in een rijke Belgische jus',
       't-main-scampi-tomaat-title': 'Scampi in tomatenroomsaus',
-      't-main-scampi-tomaat-desc': 'Tien scampi geserveerd in een tomaten- en roomsaus',
+      't-main-scampi-tomaat-desc': '(10 stuks) Scampi geserveerd in een tomaten- en roomsaus',
+      't-main-chicken-brochette-title': 'Kipbrochette 1/2',
+      't-main-chicken-brochette-desc': 'Halve of hele portie van onze heerlijke kipbrochette, geserveerd met frieten en saus naar keuze',
+      't-main-volauvent-title': 'Vol-au-vent',
+      't-main-volauvent-desc': 'Klassieke Belgische vol-au-vent gevuld met kip, champignons en een romige saus, geserveerd met frieten',
+      't -main-trout-title': 'Forelfilet met kruidenboter',
+      't-main-trout-desc': 'Vers gebakken forelfilet gegarneerd met een aromatische kruidenboter, geserveerd met seizoensgroenten en frieten',
+      't-main-scampi-look-title': 'Scampi look',
+      't-main-scampi-look-desc': '(10 stuks) Scampi gebakken in een smaakvolle looksaus, geserveerd met knapperig brood om in te dippen',
+      't-main-scampi-diabolo-title': 'Scampi diabolo',
+      't-main-scampi-diabolo-desc': '(10 stuks) scampi gekookt in een pittige diabolo saus, geserveerd met frieten om de pittigheid te balanceren',
+      't-main-paardebiefstuk-title': 'Paardebiefstuk ±300 g',
+      't-main-paardebiefstuk-desc': 'Gegrilde paardebiefstuk, geserveerd met frieten en saus naar keuze: (champignon, peper, béarnaise, provençale)',
+      't-main-breaded-fish-title': 'Filet van gepaneerde vis',
+      't-main-breaded-fish-desc': 'Knapperige visfilet geserveerd met frieten en tartaarsaus',
+      't-kids-menu-title': 'Kindermenu',
+      't-kids-volauvent': 'Vol-au-vent (kindergerecht)',
+      't-kids-stoofvlees': 'Stoofvlees (kindergerecht)',
+      't-kids-curryworst': '2 Curryworsten',
+      't-starter-duo': 'Duo van kaas & garnalen',
 
       // Warme drankjes
       't-hotdrinks-title': 'Warme drankjes',
 
-      't-drink-coffee': 'Koffie',
+      't-drink-coffee': 'Koffie/Deca',
       't-drink-espresso': 'Espresso',
       't-drink-cappuccino': 'Cappuccino',
       't-drink-latte': 'Latte',
@@ -908,6 +963,7 @@ function initLanguageSystem() {
       't-beer-leffe': 'Leffe Blond',
       't-beer-palm': 'Palm',
       't-beer-westmalle-extra': 'Westmalle Extra',
+      't-beer-westmalle-Hoegarden': 'Westmalle Hoegarden Wit',
       't-beer-erdinger': 'Erdinger Weissbier',
       't-beer-carolus': 'Carolus Classic',
       't-beer-cornet': 'Cornet',
@@ -1030,7 +1086,7 @@ function initLanguageSystem() {
     });
   });
 
-  updateLanguage('en');
+  updateLanguage('nl');
 }
 
 

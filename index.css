@@ -530,7 +530,7 @@ body.menu-open {
 .section-header h2::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
